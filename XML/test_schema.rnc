@@ -8,15 +8,19 @@ letter=element letter {head, body, close}
 pers=element pers {role, job?, allegiance?, text}
     role=attribute role {text}
     job=attribute job {text}
-    allegiance=attribute allegiance {'u'|'c'}   #AM: I think we should write these out 'union' and 'confederate'
+    allegiance=attribute allegiance {'u'|'c'}   
+    #AM: I think we should write these out 'union' and 'confederate' 
+    #Z: I'm inclined to disagree.  Longer written forms are more prone to error.  We can always have it corrected to those automatically later.
 state=attribute state {"un"|"DE"|"PA"|"NJ"|"GA"|"CT"|"MA"|"MD"|"SC"|"NH"|"VA"|"NY"|"NC"|"RI"|"VT"|"KY"|"TN"|"OH"|"LA"|"IN"|"MS"|"IL"|"AL"|"ME"|"MO"|"AR"|"MI"|"FL"|"TX"|"IA"|"WI"|"CA"|"MN"|"OR"|"KS"|"WV"|"NV"}
 #un = unknown/unclear
 
 #sections
-head=element head {location, unit, pers}
+head=element head {location?, date?, unit?, pers}
     location=element location {state, text}
+    date=element date {text}
     unit=element unit {text}
     #AM: need to add date element. also location and units might not be in the heading. what do?
+    #Z: edited to reflect this need.  Feel free to add +, ?, or * as needed without extra permissions.
     
 body=element body {(pers|place|sic|text)+}
     place=element place {state, text}
