@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- worked off the test-schema for the most part. there are some deviations with this one like not having a unit in the heading and having a date -->
+<letter>  
+<head>
+<location state = "SC">Hilton Head</location>
+
+<date day ="8" month ="October" year = "1862">Oct. 8th, 1862</date>
+
+<pers role = "recip">My Dear Mother,</pers>
+</head>
+<body>  
+    Hearing that there is a mail going out this afternoon I thought I would improve the opportunity and write you a few lines.
+
+    I am sorry to tell you I am not very well at present. I was taken sick about three weeks ago with chronic diarhea, and have been in the hospital about a fortnight. I have been pretty sick but I am getting better now and hope to be well in a few days.
+
+    I would like to have you send me some things which will come better in a barrel than in anything else. I should like some good fresh eggs, a bottle of preserves, some lemons if you can get some good ones, some ginger root. Some butter would be very nice, it will come better in a tin can than in anything else. I would like some sugar too. I wish you would send a bottle of good Cider Vinegar also-
+
+    I would like some pickled onions, and some dried apples. Some prepared chocalate would taste(?) first rate, as we do not get good tea and coffee.
+
+    A towel and a couple of handkercheifs will be very acceptable also. If there is any room for anything else I wish that you would fill it up with onions and good sound apples that are not quite ripe that they will keep better. Direct to the care of <pers role ="ref" job = "captain" alligience = "u">Capt. Sanford, Co C, 7th Regt. Conn Vols.</pers> _____ <pers role = "ref" job = "general" allegiance="u">DD Tompkins Esq Asst. Q M General <!--DD Tompkins Esquire assistant Quarter-master general --></pers>No 6 State St. N.Y. Please send it as soon as possible.
+
+    I have not heard from you since I have been here but should like to do so every mail. If convenient please send $5.00 the next time you write.
+</body>  
+<close>
+    <val>Give love to all enquiring friends, and believe me -
+
+Ever your aff son
+</val>
+<pers role = "sender" job = "soldier" allegiance = "u">William _(?) Norton</pers>
+</close>
+</letter>
