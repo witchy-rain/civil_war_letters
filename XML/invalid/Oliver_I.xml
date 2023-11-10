@@ -6,6 +6,7 @@
 <location state="MD">Camp Mcneal  Meredian Hill</location>
 <date>October the 12.1862</date>
 <!-- head does not have a person change in schema-->
+    <!--whc: recommend adding a person tag and indicating anonymous as the name-->
 </head>
 <body>
     I take my pen in hand to inform you that I am well at present and hope that those few line may find you enjoying the same blessing. I started at soldiering beter than two months ago. I inlisted in a company called<!-- unit not allowed in body--> <unit>Co. F 149 Reg. P.B.V.</unit>  We are now in a camp called <!--location not allowed in body --><location state = "MD">camp McNeal on Meridian hill</location> near the <sic/>sity of Washington. We are not near all the time in camp. We are the most of the time out to guard hospittle at town and other places part of the regiment has moved there tents to town, I expect that hour company will move before this weak is out, but I do not no for sure; it has bin warm and dry ever since we have bin down here until last fri night about 1 o’clock, it comenced raining and poured it down untill about four. I had to go on guard at four so I got shet of standing in the rain for that night since that night it has fellt like husking corn it is raining this after noon.
