@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<letter>
+    <head>
+<location state="OH">Columbus Ohio</location>
+<date day="25" month="August" year="1863">Aug 25, 1863</date>
+
+<salutation>My dear <pers role="recip">Mattie</pers></salutation>
+    </head>
+    <body><emotion mood="happy">Just a few moments since a letter was received by <pers role="ref">John</pers> from you, through the kindness of our mutual friend <pers role="ref" allegiance="c">Genl Buckner</pers>, which was sent to <pers role="ref" job="general" allegiance="u">Genl Burnside's</pers> to be forwarded.</emotion> <emotion mood="happy">You cant imagine the gratification it gave us to hear of from our dear sister <pers role="recip">Mattie</pers>, aside from the pleasure plainly demonstrated by her husband.</emotion> <emotion mood="happy">How anxiously we look forward to the arrival of the Mails, <!--&--> ravenously do we devour its contents.</emotion> <emotion mood="happy">It is the very greatest pleasure we have— I have no doubt ere this you have heard of our imprisonment in the <location street="878 Coitsville-Hubbard Rd" state="OH">Ohio State Penitentiary</location>.</emotion> <emotion mood="defeated">About the <date day="1" month="August" year="1863">1st of Aug</date>. about 70 officers of our command, were removed to this place.</emotion> <emotion mood="bittersweet">At first our confinement was almost unbearable,
+
+<!--Page 2      Images (pages 2 <!-\-&-\-> 3): 150 DPI – 100 DPI-->
+
+but since we have been found to be gentlemen (as expressed by the <pers role="ref">Penitentiary Warden</pers>) we have been treated exceedingly well.</emotion> <emotion mood="happy">On Sunday's we are confined in our cells all day, excepting 2 hours in the morning <!--&--> one in the afternoon, the balance of the week we are permitted to be together from 7 A M till 6 P. M.</emotion> <emotion mood="happy">which gives us plenty of time to converse <!--&--> exercise; We also have the priviledge (those who have "Green Backs") of purchasing whatever delicasies in the shape of eadibles <!--&--> under clothing we want.</emotion> <emotion mood="happy">Taking into consideration the clenliness conveniences <!--&--> many other luxuries which we have here, I have no doubt that we are better off than any other p Confederate prisoners now in confinement in the U S. barring the idea of being in a Penitentiary.</emotion> <emotion mood="happy">for which we care very little. being put here for merely stealing Horses, We receive letters daily from our friends at
+
+<!--Page 3      Images (pages 2 <!-\-&-\-> 3): 150 DPI – 100 DPI-->
+
+home, generally accompanied with a box of something nice to eat.</emotion> <emotion mood="sad">The only thing aside from our imprisonment of which we complain, is the want of outer garments, which priviledge is granted those in other prisons.</emotion> <emotion mood="hopeful">this restriction I hope will soon be removed if properly represented to the officer regulating this matter.</emotion> <emotion mood="happy">We hear from <pers role="ref">Ma</pers> daily.</emotion> <emotion mood="bittersweet">At first she suffered no doubt inexpressebly—but since she finds that we are so comfortable, <!--&--> in such fine spirits, her suffering has been relieved proportionately.</emotion> <emotion mood="happy">She writes almost daily to all of us, <!--&--> speaks of visiting us soon.</emotion> <emotion mood="happy">which priviledge I trust may be granted her, <pers role="ref">Basil Charlton</pers> <!--&--> I saw her at <location state="OH">Cincinnatti</location> for an hour, when we first arrived there.</emotion> <emotion mood="happy"><pers role="ref" job="general" allegiance="u">Genl Burnside</pers> granted this priviledge in consideration of some little kindness shown his ADC. <pers role="ref" job="captain" allegiance="u">Capt Pell</pers> by myself when a prisoner at our <place>Head Quarters</place> at the battle of Manassas</emotion>
+
+<!--Page 4      Images: 150 DPI – 100 DPI-->
+
+<emotion mood="happy">when chief of Staff of <pers role="ref" job="general" allegiance="c">Genl A. P. Hill</pers>— In your letter you ask "What has become of <pers role="ref">Foster Cheatham</pers>" I can tell you, he is now sitting in front of my apartments looking fatter and better than you ever saw him.</emotion> <emotion mood="happy">I am almost ashamed to admit it, but really I am glad that he is a prisoner.</emotion> <emotion mood="happy">he is such good company for us.</emotion> <emotion mood="sad">I wrote <pers role="ref" job="general" allegiance="c">Genl Hill</pers> from this place some time since, but whether the letter reached him, I cant say.</emotion> <emotion mood="bittersweet">so please write <pers role="ref">Dolly</pers> as soon as you get this.</emotion> <emotion mood="bittersweet">and direct your letter to care I. <location state="VA">Booton Hill Richmond Va.</location> giving her all the news.</emotion> <emotion mood="happy">we have all I believe written to <pers role="ref">Tommy</pers>. You do so also if you please, which I know you will do — <pers role="ref">Charlton</pers> is in daily communication with <pers role="ref">Miss Williams</pers>, <!--&--> I with somebody else, not quite so often as once a day, but fully as satisfactory, I have a nice present for you, which I hope to deliver in person soon in shape of a carte de visique of somebody</emotion></body>
+<close>
+<val>Very afby
+<pers role="sender" job="soldier" allegiance="c">R C. Morgan</pers>
+
+Love to Sister Alice</val>
+</close>
+</letter>
