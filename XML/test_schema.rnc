@@ -17,7 +17,13 @@ state=attribute state {"un"|"DE"|"PA"|"NJ"|"GA"|"CT"|"MA"|"MD"|"SC"|"NH"|"VA"|"N
 #sections
 head=element head {location?, date?, unit?, pers}
     location=element location {state, text}
-    date=element date {text}
+    #AM: added attributes to date element
+    date=element date {day, month, year, standard, text}
+    day = attribute day {text}
+    month = attribute month {text}
+    year = attribute year{text}
+    #YYYYMMDD
+    standard = attribute standard {text}
     unit=element unit {text}
     #AM: need to add date element. also location and units might not be in the heading. what do?
     #Z: edited to reflect this need.  Feel free to add +, ?, or * as needed without extra permissions.
