@@ -18,9 +18,9 @@
                 <body>
                     <h1>Letters</h1>
                     <xsl:for-each select="$input">
-                        <h2><xsl:apply-templates select=".//date"/></h2>
-                        <p><i><xsl:apply-templates select=".//location"/></i></p>
-                        <p><u><xsl:apply-templates select=".//head/pers"/></u></p>
+                        <h2><xsl:apply-templates select=".//head/date"/></h2>
+                        <p><i><xsl:apply-templates select=".//head/location"/></i></p>
+                        <p><u><xsl:apply-templates select=".//head//salutation"/></u></p>
                         <p><xsl:apply-templates select=".//body"/></p>
                         <hr/>
                     </xsl:for-each>
