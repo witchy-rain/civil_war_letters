@@ -16,8 +16,18 @@ How, and where is Nat [i.e., Nathaniel L. Savage (b. 1854), the author's son], I
 your affectionate Brother, Southy.  
 Give my love all with you &amp; at Sister H's when you see them I am sorry to hear sister H's health is so bad. Also my love to them all at Brother Nortons, I would like to trade you some fish for some of your nice bread.
 </body>
+<<<<<<< HEAD
     <close>
     <val>your Affectionate Brother</val>
 <pers role = "sender" job = "soldier" allegiance="c">Southy</pers>
+=======
+<close>
+  
+<val>  Give my love all with you &amp; at Sister H's when you see them I am sorry to hear sister H's health is so bad. Also my love to them all at Brother Nortons, I would like to trade you some fish for some of your nice bread.
+
+your Affectionate Brother</val>
+<pers role = "sender" job = "soldier" allegiance="c">Southy</pers>
+
+>>>>>>> 01807b2fa273fc66f3ee84cadf86674cd6200272
 </close>
 </letter>
