@@ -18,6 +18,7 @@
                 <body>
                     <h1>Letters</h1>
                     <xsl:for-each select="$input">
+                        <xsl:sort select=".//head//@standard"/>
                         <h2><xsl:apply-templates select=".//head/date/@month"/><xsl:text> </xsl:text><xsl:apply-templates select=".//head/date/@day"/>, <xsl:apply-templates select=".//head/date/@year"/></h2>
                         <p><i><xsl:apply-templates select=".//head/location"/></i></p>
                         <p><u><xsl:apply-templates select=".//head/pers"/></u></p>

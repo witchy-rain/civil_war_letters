@@ -4,7 +4,7 @@
 <letter>
     <head>
 <location state="OH">Columbus Ohio</location>
-<date day="25" month="August" year="1863">Aug 25, 1863</date>
+<date day="25" month="August" year="1863" standard="18630825">Aug 25, 1863</date>
 
 <sal>My dear <pers role="recip">Mattie</pers></sal>
     </head>
