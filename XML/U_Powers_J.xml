@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
 
-<letter>
 <head>
     <location state='VA'>Camp Griffon, VA</location>
-    <date day="23" month="December" year="1861" standard="18611223">Dec. 23rd, 1861</date>
+    <date day="23" month="December" year="1861">Dec. 23rd, 1861</date>
     <pers role="recip">Dear Sister Mary</pers>
 </head>
 
@@ -16,7 +14,7 @@
 </body>
     
 <close>
-    <pers role="sender" job="" allegiance="u">James Powers</pers>
+    <pers role="sender" job="" allegiance="">James Powers</pers>
     <val>write soon</val>
 </close>
 </letter>

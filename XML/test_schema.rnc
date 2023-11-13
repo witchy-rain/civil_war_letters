@@ -2,11 +2,11 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 #documents
 start=letter
-letter=element letter {head, body, close}
+letter=element letter {date?, head, body, close}
 
 #shared
 pers=element pers {role, job?, allegiance?, text}
-    role=attribute role {text}
+    role=attribute role {"recip"|"ref"|"sender"}
     job=attribute job {text}
     allegiance=attribute allegiance {'u'|'c'}   
     #AM: I think we should write these out 'union' and 'confederate' 
@@ -15,19 +15,28 @@ state=attribute state {"un"|"DE"|"PA"|"NJ"|"GA"|"CT"|"MA"|"MD"|"SC"|"NH"|"VA"|"N
 #un = unknown/unclear
 
 #sections
-head=element head {location?, date?, unit?, pers}
+head=element head {(location|date|unit|sal|pers|text)+}
     location=element location {state, text}
-    date=element date {text}
+    sal=element sal {(pers|text)+}
+    #AM: added attributes to date element
+    date=element date {day?, month?, year?, standard?, text}
+    day = attribute day {xsd:integer}
+    month = attribute month {"January"|"February"|"March"|"April"|"May"|"June"|"July"|"August"|"September"|"October"|"November"|"December"}
+    year = attribute year{xsd:integer}
+    #YYYYMMDD
+    standard = attribute standard {xsd:integer}
     unit=element unit {text}
     #AM: need to add date element. also location and units might not be in the heading. what do?
     #Z: edited to reflect this need.  Feel free to add +, ?, or * as needed without extra permissions.
     
-body=element body {(pers|place|sic|emotion|text)+}
+body=element body {emotion|(pers|place|sic|emotion|location|unit|text|date)+}
     place=element place {state, text}
     sic=element sic {empty}
     #AM: 11/8/23 11:30am - added emotion tag
-    emotion = element emotion {mood,text}
+    emotion = element emotion {mood,(pers|place|sic|emotion|location|unit|text|date)+}
     mood = attribute mood {"bittersweet" | "happy" | "sad" | "angry" | "afraid" | "digusted" | "hopeful" | "hopeless" | "triumphant" | "defiant" | "defeated" | "yielding"}
 
-close=element close {val, pers}
+close=element close {(location|val|pers|text|unit|date|ps)+}
+    #Z 11/12 19:30 added pers to close
     val=element val {text}
+    ps=element ps {(text|location|pers)+}

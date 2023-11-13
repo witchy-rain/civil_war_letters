@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
 
 <letter>
 <head>
-<place>Headquarters</place>
+Headquarters
 
-<location street="133 Reg. Ind." state="AL">133 Reg. Ind.
+    <unit>133 Reg. Ind.</unit>
 
-Bridgeport, Ala</location>
+    <location state="AL">Bridgeport, Ala</location>
 
-<date day="13" month="July" year="1864">July 13th, 1864</date>
+<date day="13" month="July" year="1864" standard="18640713">July 13th, 1864</date>
 
-<salutation>Dear <pers role="recip">Nephew</pers>,</salutation>
+<sal>Dear <pers role="recip">Nephew</pers>,</sal>
 </head>
 <body>
-I have just seen <pers role="ref" job="captain" region="u">Cap. Cowgil</pers> and learned where I could reach you by a letter. I was much pleased to hear your Captain speak so favorably of you as a brave soldier. Indeed he speaks in the highest terms of you. Don't be rash do your duty as a soldier, but don’t necessarily expose yourself. Many a brave man has loss his life by an unnecessary exposure of his person. Be brave but not reclesly, dashing but prudent, heroic but always exercising sound judgement and discretion.
+I have just seen <pers role="ref" job="captain" allegiance="u">Cap. Cowgil</pers> and learned where I could reach you by a letter. I was much pleased to hear your Captain speak so favorably of you as a brave soldier. Indeed he speaks in the highest terms of you. Don't be rash do your duty as a soldier, but don’t necessarily expose yourself. Many a brave man has loss his life by an unnecessary exposure of his person. Be brave but not reclesly, dashing but prudent, heroic but always exercising sound judgement and discretion.
 
 I have been here, at this port, for near two months, in command of <unit>the 133 Reg.</unit> one hundred days men. I will be in <place state="TN">Chattanooga</place> in a few days and will try and get down to the front. However this is very uncertain.
 
-We leave here, on our return home about the middle of <date month="August">August</date> and in the mean time, I hope to get a letter from you. But if you do not get this soon, direct to <pers role="ref" job="" region="">Terre Haute</pers>, for I will be there after <date month="September">September</date>.
+We leave here, on our return home about the middle of <date month="August">August</date> and in the mean time, I hope to get a letter from you. But if you do not get this soon, direct to <place state="IN">Terre Haute</place>, for I will be there after <date month="September">September</date>.
 
 I do not forget the talk we had when I last saw you and in proper time will exert all the influence I have in your favor.
 </body>
