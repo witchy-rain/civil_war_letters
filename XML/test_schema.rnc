@@ -32,8 +32,10 @@ body=element body {(pers|place|sic|emotion|location|unit|text)+}
     place=element place {state, text}
     sic=element sic {empty}
     #AM: 11/8/23 11:30am - added emotion tag
-    emotion = element emotion {mood,text}
+    emotion = element emotion {mood,(pers|place|sic|location|unit|text)*}
+    #emotion = element emotion {mood, text}
     mood = attribute mood {"bittersweet" | "happy" | "sad" | "angry" | "afraid" | "digusted" | "hopeful" | "hopeless" | "triumphant" | "defiant" | "defeated" | "yielding"}
 
-close=element close {val}
-    val=element val {(pers|unit|location|text)+}
+#AM: changed this up
+close=element close {val, (pers|unit|location|text)*}
+    val=element val {text}
