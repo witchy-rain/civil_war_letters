@@ -15,7 +15,7 @@ state=attribute state {"un"|"DE"|"PA"|"NJ"|"GA"|"CT"|"MA"|"MD"|"SC"|"NH"|"VA"|"N
 #un = unknown/unclear
 
 #sections
-head=element head {location?, date?, unit?, pers}
+head=element head {location?, date?, unit?, pers?}
     location=element location {state, text}
     #AM: added attributes to date element
     date=element date {day, month, year, standard, text}
@@ -28,12 +28,12 @@ head=element head {location?, date?, unit?, pers}
     #AM: need to add date element. also location and units might not be in the heading. what do?
     #Z: edited to reflect this need.  Feel free to add +, ?, or * as needed without extra permissions.
     
-body=element body {(pers|place|sic|emotion|location|text)+}
+body=element body {(pers|place|sic|emotion|location|unit|text)+}
     place=element place {state, text}
     sic=element sic {empty}
     #AM: 11/8/23 11:30am - added emotion tag
     emotion = element emotion {mood,text}
     mood = attribute mood {"bittersweet" | "happy" | "sad" | "angry" | "afraid" | "digusted" | "hopeful" | "hopeless" | "triumphant" | "defiant" | "defeated" | "yielding"}
 
-close=element close {val, pers}
-    val=element val {text}
+close=element close {val}
+    val=element val {(pers|unit|location|text)+}

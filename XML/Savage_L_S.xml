@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <letter>
 <head>
-
 <location state="MS">Hd Qts Signal Corps</location>
 <date day="3" month="May" year="1864" standard="18640503">May 3rd 1864</date>
 
@@ -20,7 +19,8 @@ your affectionate Brother, Southy.
   
 <val>  Give my love all with you &amp; at Sister H's when you see them I am sorry to hear sister H's health is so bad. Also my love to them all at Brother Nortons, I would like to trade you some fish for some of your nice bread.
 
-your Affectionate Brother</val> 
+your Affectionate Brother
 <pers role = "sender" job = "soldier" allegiance="c">Southy</pers>
+</val>
 </close>
 </letter>
