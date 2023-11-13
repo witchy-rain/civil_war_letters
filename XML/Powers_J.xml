@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
 
 <letter>
 <head>
@@ -15,7 +16,7 @@
 </body>
     
 <close>
-    <pers role="sender" job="" allegiance="">James Powers</pers>
+    <pers role="sender" job="" allegiance="u">James Powers</pers>
     <val>write soon</val>
 </close>
 </letter>

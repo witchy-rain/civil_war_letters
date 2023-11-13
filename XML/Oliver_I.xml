@@ -17,7 +17,7 @@
 
 <close>
 <val>
-I want you to write and answer this as soon as you get it and oblige yours,
+I want you to write and answer this as soon as you get it and oblige yours,</val>
 
 <pers role="sender" job = "soldier" allegiance = "u">Isaac Oliver</pers> To <pers role = "recip">I B Ikeler</pers>
 
@@ -32,6 +32,5 @@ Washington D.C
 in care of
 
 <pers role = "ref" job = "captain" allegiance="u">Captain ES Osborne</pers>
-</val>
 </close>
 </letter>

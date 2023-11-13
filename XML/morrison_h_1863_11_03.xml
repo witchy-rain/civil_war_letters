@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <letter>
+<date day="3" month="November" year="1863" standard="18631103"/>
 <head>
     <location state='SC'>Morris Island, S.C.</location>
 
