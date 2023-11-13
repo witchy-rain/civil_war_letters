@@ -22,6 +22,7 @@
                         <p><i><xsl:apply-templates select=".//head/location"/></i></p>
                         <p><u><xsl:apply-templates select=".//head//salutation"/></u></p>
                         <p><xsl:apply-templates select=".//body"/></p>
+                        <p><xsl:apply-templates select=".//close"/></p>
                         <hr/>
                         <p><xsl:apply-templates/></p>
                     </xsl:for-each>
