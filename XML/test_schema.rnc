@@ -9,8 +9,6 @@ pers=element pers {role, job?, allegiance?, text}
     role=attribute role {"recip"|"ref"|"sender"}
     job=attribute job {text}
     allegiance=attribute allegiance {'u'|'c'}   
-    #AM: I think we should write these out 'union' and 'confederate' 
-    #Z: I'm inclined to disagree.  Longer written forms are more prone to error.  We can always have it corrected to those automatically later.
 state=attribute state {"un"|"DE"|"PA"|"NJ"|"GA"|"CT"|"MA"|"MD"|"SC"|"NH"|"VA"|"NY"|"NC"|"RI"|"VT"|"KY"|"TN"|"OH"|"LA"|"IN"|"MS"|"IL"|"AL"|"ME"|"MO"|"AR"|"MI"|"FL"|"TX"|"IA"|"WI"|"CA"|"MN"|"OR"|"KS"|"WV"|"NV"}
 #un = unknown/unclear
 
@@ -18,7 +16,6 @@ state=attribute state {"un"|"DE"|"PA"|"NJ"|"GA"|"CT"|"MA"|"MD"|"SC"|"NH"|"VA"|"N
 head=element head {(location|date|unit|sal|pers|text)+}
     location=element location {state, text}
     sal=element sal {(pers|text)+}
-    #AM: added attributes to date element
     date=element date {day?, month?, year?, standard?, text}
     day = attribute day {xsd:integer}
     month = attribute month {"January"|"February"|"March"|"April"|"May"|"June"|"July"|"August"|"September"|"October"|"November"|"December"}
@@ -26,17 +23,13 @@ head=element head {(location|date|unit|sal|pers|text)+}
     #YYYYMMDD
     standard = attribute standard {xsd:integer}
     unit=element unit {text}
-    #AM: need to add date element. also location and units might not be in the heading. what do?
-    #Z: edited to reflect this need.  Feel free to add +, ?, or * as needed without extra permissions.
     
-body=element body {emotion|(pers|place|sic|emotion|location|unit|text|date)+}
+body=element body {(pers|place|sic|emotion|location|unit|text|date)+}
     place=element place {state, text}
     sic=element sic {empty}
-    #AM: 11/8/23 11:30am - added emotion tag
-    emotion = element emotion {mood,(pers|place|sic|emotion|location|unit|text|date)+}
+    emotion = element emotion {mood,(pers|place|sic|emotion|location|unit|text|date)*}
     mood = attribute mood {"bittersweet" | "happy" | "sad" | "angry" | "afraid" | "digusted" | "hopeful" | "hopeless" | "triumphant" | "defiant" | "defeated" | "yielding"}
 
-close=element close {(location|val|pers|text|unit|date|ps)+}
-    #Z 11/12 19:30 added pers to close
+close=element close {(location|val|pers|text|unit|date|ps)*}
     val=element val {text}
     ps=element ps {(text|location|pers)+}
