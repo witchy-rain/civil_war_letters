@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<letter>
+<head>
+    <place state="VA">Camp 11th Va cav.</place> 
+    <date day="09" month="April" year="1864">April 9th. 1864.</date>
+    <location state='VA'>Rockbridge co. Va</location>
+
+    <salutation><pers role="recip">Dear Sister</pers></salutation>
+
+</head>
+
+<body>
+    <emotion mood="glad">Yours of the 23d ult. reached me on the 1st inst. it found me in good health.</emotion> but for the last few days I have been labouring under the difficulties of a severe cold, I am now well, though my appetite has not yet arrived at its proper sagacious state.
+    <pers role="ref" job="corp" allegiance="c">James W. Himmelwright [i.e., Pvt. James W. S. Himmelwright, Co. H, 11th Virginia Cavalry]</pers> arrived in camp last night he Saw father a few days ago and said you were all well; He is a Substitute in our company for <pers role="ref" job="corp" allegiance="c">W. H. Richard [i.e., Pvt. William H. Richard, Co. H, 11th Virginia Cavalry]</pers> and came here very silently (not speaking above a whisper) for the purpose of being not being kept by <pers role="ref" job="corp" allegiance="c">capt Pierce [i.e., Capt. Adolphus Mandeville Pierce, Co. H, 11th Virginia Cavalry]</pers>, but sent back rejected, So that Richards will have to come in his own place, he Says Richards and others in that vicinity have been conscripted, the capt I believe refuses to keep him, So he will start home Shortly. with whom I intend to Send this letter. We left our camp at Brownsburg the 31st of march and came to this place 8 miles above Lexington and 5 miles below (or north of) the natural Bridge, Nearly all the soldiers have gone to se this Natural curiosity, owing to my ill health I have not yet been able to go, but if nothing occurs to prevent me I Shall go in a day or two to behold the wonderful works of nature in Bridge building. 
+    <pers role="ref" job="corp" allegiance="c">James Whetzel [i.e., Pvt. James G. Whetzell, Co. H, 11th Virginia Cavalry],</pers> arrived here on the 1st of april tell his folks if you See them that he got here Safe and that he is now well and as Jolly as ever. He Says that they had heard at home that <pers role="ref" job="corp" allegiance="c">George Wigginton [i.e., Pvt. George W. Wigginton, Co. A, 7th Virginia Cavalry]</pers> had been Sick. Wether he has been Sick or not I cannot tell, but he is well now and doing duty. <emotion mood="sad">I am Sorry father cannot get a horse</emotion>, and indeed I cannot tell how you will manage to get along without one; but <emotion mood="hopeful">I hope you will be able to get one some how be fore long.</emotion>
+There has been a great deal of Snow and rain this Spring, to day it is raining fast.
+This is a mountainous country, the land is good and People are generally wealthy, but it is a hard thing to get a meals victuals.
+I wish you had informed me what Amos did with his tobacco, whether he let <pers role="ref" job="corp" allegiance="c">Michael [i.e., Michael White]</pers> have any or not.
+    <pers role="ref" job="corp" allegiance="c">Genl Rosser [i.e., Brig. Gen. Thomas L. Rosser, C.S.A.]</pers> has given his brigade the name of Laurel Brigade, (in honour of having won Laurels of victory in almost every fight,) requesting the men to wear the leaf of the natural Shrub or the imitation thereof on their hats or coats. There is no talk of moveing camp at present. Tell Michael he must do all he can towards raising something to eat, if you can do nothing at home help your neighbour, if the conscripts will allow you.
+But I must close for the present
+</body>  
+    
+    <close>
+        <val>
+Yours
+            <pers role = "sender" job = "soldier" allegiance = "a">Isaac I. White</pers>
+        </val>
+    </close>
+</letter>
