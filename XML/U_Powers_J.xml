@@ -3,7 +3,7 @@
 <head>
     <location state='VA'>Camp Griffon, VA</location>
     <date day="23" month="December" year="1861">Dec. 23rd, 1861</date>
-    <pers role="recip">Dear Sister Mary</pers>
+    <sal>Dear <pers role="recip">Sister Mary</pers></sal>
 </head>
 
 

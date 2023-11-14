@@ -7,9 +7,9 @@
 
 Bridgeport, Ala</location>
 
-<date day="13" month="July" year="1864">July 13th, 1864</date>
+<date day="13" month="July" year="1864" standard = "18640713">July 13th, 1864</date>
 
-<salutation>Dear <pers role="recip">Nephew</pers>,</salutation>
+<sal>Dear <pers role="recip">Nephew</pers>,</sal>
 </head>
 <body>
 I have just seen <pers role="ref" job="captain" region="">Cap. Cowgil</pers> & learned where I could reach you by a letter. I was much pleased to hear your Captain speak so favorably of you as a brave soldier. Indeed he speaks in the highest terms of you. Don't be rash do your duty as a soldier, but don’t necessarily expose yourself. Many a brave man has loss his life by an unnecessary exposure of his person. Be brave but not reclesly, dashing but prudent, heroic but always exercising sound judgement & discretion.

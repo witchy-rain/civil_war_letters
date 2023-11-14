@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <head>
-<date day="23" month="May" year="1862">May 23, 1862</date> <location state="MD">Roller, MD</location>
+<date day="23" month="May" year="1862" standard = "18620523">May 23, 1862</date> <location state="MD">Roller, MD</location>
 
-<salutation>Deer <pers role="recip">mother</pers>,</salutation>
+<sal>Deer <pers role="recip">mother</pers>,</sal>
 </head>
 <body>
     Ituk this time tunnite to informe you that iwas well and hope these fieu lines will finde you all well. We are in <place state="MD">roller County</place>. Yesteday we went 40 milse back to <place state="">flat top mountain</place>. If we would stade on <place>the easte river</place> twenty four ours longer we woode aseede <place state="MD">Richmonde</place>.

@@ -2,9 +2,9 @@
 
 <head>
 <location state='VA'>Arlington Hights, VA</location>
-<date day="20" month="May" year="1865">May 20, 1865</date>
+<date day="20" month="May" year="1865" standard = "18650520">May 20, 1865</date>
 
-    <pers role="recip">Dear Brother</pers>
+    <sal>Dear <pers role="recip">Brother</pers></sal>
 </head>
 
 <body>Yours of the 31st of March came to hand yesterday after being on the road nearly two months, but you must not think I waited to get a letter from you before writing to you. The reason of my not writing to you was I have forgotten the number of your Brigade and Division and I am going to trust this by directing to the Regiment. Arlington Hights are on the Virginia side of the Potomac opposite Washington. We marched here from Appomattox Court House (the place of Lee's surrender). We camped about two weeks at Burkesville (the junction of the Petersburg and Lynchburg, and Richmond & Danville Railroads). We marched from there direct by the way of Petersburg, Richmond, Bowling Green, and Fredericksburg.

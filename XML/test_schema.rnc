@@ -2,7 +2,7 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 #documents
 start=letter
-letter=element letter {date?, head, body, close}
+letter=element letter {head, body, close}
 
 #shared
 pers=element pers {role, job?, allegiance?, text}

@@ -7,7 +7,7 @@
 
 <date day ="8" month ="October" year = "1862" standard = "18621008">Oct. 8th, 1862</date>
 
-<pers role = "recip">My Dear Mother,</pers>
+<sal>My Dear <pers role = "recip">Mother,</pers></sal>
 </head>
 <body>  
     Hearing that there is a mail going out this afternoon I thought I would improve the opportunity and write you a few lines.
