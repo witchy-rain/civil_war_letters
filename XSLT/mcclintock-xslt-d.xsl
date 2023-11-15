@@ -34,7 +34,7 @@
                         
                         <td><xsl:apply-templates select="//head/date"/></td>
                         
-                        <td><xsl:apply-templates select="//emotion[@mood='happy']"/></td>
+                        <td><xsl:apply-templates select="//emotion[@mood='happy']=>string()=>string-length()"/></td>
                         
                         
                         
