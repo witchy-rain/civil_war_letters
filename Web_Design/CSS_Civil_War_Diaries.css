@@ -9,10 +9,11 @@ html{
 }
 
 span.head{
-    font-family:Copperplate;
+    font-family: "Copperplate Gothic";
+    font-weight: bold;
 }
 
 span.body{
-    font-family:Constantia;
+    font-family: "Constantia";
 }
 
