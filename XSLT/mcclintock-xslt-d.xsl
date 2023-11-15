@@ -11,7 +11,7 @@
     <xsl:variable name="input" select="collection('../XML/?select=*.xml')"/> <!--whc: insert the correct file path for your context-->
     <xsl:template match="/"> <!--whc: you can call the variable anything; make sure it matches from the variable definition line to where you call for it-->
         
-        <xsl:result-document method="xhtml" indent="yes" href="/Users/jake2/Documents/GitHub/civil_war_diaries/XSLT/../Site/McClintock.html"> <!--whc: insert the correct file path and file name for your context-->
+        <xsl:result-document method="xhtml" indent="yes" href="../Site/McClintock.html"> <!--whc: insert the correct file path and file name for your context-->
             
             <html>
                 <head><title>My page</title></head>
@@ -29,17 +29,15 @@
                     
                    </xsl:for-each>
                    <table> 
-                    <tr>
+                    
                        <xsl:for-each select="$input">
-                        
+                           <tr> 
                         <td><xsl:apply-templates select="//head/date"/></td>
                         
-                        <td><xsl:apply-templates select="//emotion[@mood='happy']=>string()=>string-length()"/></td>
-                        
-                        
-                        
+                        <td><xsl:apply-templates select="//emotion[@mood='happy']=>string-join()=>string-length()"/></td>
+                           </tr>
                     </xsl:for-each>        
-                    </tr>
+                   
                    </table>
                 </body>
             </html>
