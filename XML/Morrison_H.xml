@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="1_test_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <letter>
 <head>
     <date day="3" month="November" year="1863" standard="18631103"/>
