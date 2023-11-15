@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
+
 <letter>
 <head>
     <location state="VA">Ceredo, Virginia</location>
@@ -30,6 +29,6 @@
 
     <pers role="sender" job="sergeant" allegiance="u">John T. Greer</pers> of <location state="VA">Mason
         
-        County Virginia</location>, <date year="1862" standard="18620000">1862</date>
+        County Virginia</location>, <date year="1862">1862</date>
 </close>
 </letter>

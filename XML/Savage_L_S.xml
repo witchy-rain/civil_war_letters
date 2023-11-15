@@ -5,7 +5,7 @@
 <location state="MS">Hd Qts Signal Corps</location>
 <date day="3" month="May" year="1864" standard="18640503">May 3rd 1864</date>
 
-<pers role = "recip">My dear Sister</pers>
+<sal>My dear <pers role = "recip">Sister</pers></sal>
 </head>
 <body>
 To day is a leasure day with me and I will write you a few lines, which I have been intending to do for a long while, but have put off from time to time thinking every day I would write, but I find the old adage a true one, "Never put off for tomorrow that which can be done to day;" Though I knew that you heard from me through Parkie or Norton one, but that is not like writing some times myself.
