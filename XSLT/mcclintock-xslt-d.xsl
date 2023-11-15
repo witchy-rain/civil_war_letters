@@ -24,8 +24,23 @@
                         <p><u><xsl:apply-templates select="//head//pers"/></u></p>
                         <p><xsl:apply-templates select="//body"/></p>
                         <p><xsl:apply-templates select="//body => string-length()"/></p>
+                        
                         <hr/>
-                    </xsl:for-each>
+                    
+                   </xsl:for-each>
+                   <table> 
+                    <tr>
+                       <xsl:for-each select="$input">
+                        
+                        <td><xsl:apply-templates select="//head/date"/></td>
+                        
+                        <td><xsl:apply-templates select="//emotion[@mood='happy']"/></td>
+                        
+                        
+                        
+                    </xsl:for-each>        
+                    </tr>
+                   </table>
                 </body>
             </html>
             
