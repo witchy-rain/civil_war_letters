@@ -4,6 +4,7 @@ color: black;
 font-family: arial, helvetica, sans-serif;
 }
 
+
 p {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -97,4 +98,14 @@ a:hover {
 }
 
 
+
+
+span.head{
+    font-family: "Copperplate Gothic";
+    font-weight: bold;
+}
+
+span.body{
+    font-family: "Constantia";
+}
 
