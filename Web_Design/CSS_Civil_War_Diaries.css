@@ -1,7 +1,16 @@
-body {
-background-color: ivory;
-color: black;
-font-family: arial, helvetica, sans-serif;
+/*html{
+    background-color:#(200, 80%, 20%)
+    color:
+}
+
+*/
+span.head{
+    font-family: "Copperplate Gothic";
+    font-weight: bold;
+}
+
+span.body{
+    font-family: "Constantia";
 }
 
 
@@ -96,16 +105,3 @@ a:hover {
     width: 100%;
     background-color: #70003D;
 }
-
-
-
-
-span.head{
-    font-family: "Copperplate Gothic";
-    font-weight: bold;
-}
-
-span.body{
-    font-family: "Constantia";
-}
-
