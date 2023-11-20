@@ -24,10 +24,10 @@ head=element head {(location|date|unit|sal|pers|text)+}
     standard = attribute standard {xsd:integer}
     unit=element unit {text}
     
-body=element body {(pers|place|sic|emotion|location|unit|text|date)+}
+body=element body {(pers|place|sic|emotion|unit|text|date)+}
     place=element place {state, text}
     sic=element sic {empty}
-    emotion = element emotion {mood,(pers|place|sic|emotion|location|unit|text|date)*}
+    emotion = element emotion {mood,(pers|place|sic|emotion|unit|text|date)*}
     mood = attribute mood {"bittersweet" | "happy" | "sad" | "angry" | "afraid" | "digusted" | "hopeful" | "hopeless" | "triumphant" | "defiant" | "defeated" | "yielding"}
 
 close=element close {(location|val|pers|text|unit|date|ps)*}
