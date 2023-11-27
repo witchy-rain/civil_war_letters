@@ -1,9 +1,8 @@
-/*html{
-    background-color:#(200, 80%, 20%)
-    color:
+html{
+    background-color:#BFBFBF;
+    color:hsl(210, 50%, 20%)
 }
 
-*/
 span.head{
     font-family: "Copperplate Gothic";
     font-weight: bold;
@@ -49,7 +48,7 @@ a:hover {
     display: flex;
     width: 100%;
     overflow: hidden;
-    background-color: #8B0000;
+    background-color: #1F0F5F;
     z-index: 500;
 }
 .navbar a {
