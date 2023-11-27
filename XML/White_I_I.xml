@@ -4,7 +4,7 @@
 <letter>
 <head>
     Camp <unit>11th Va cav. </unit>
-    <date day="09" month="April" year="1864">April 9th. 1864.</date>
+    <date day="09" month="April" year="1864" standard="18640409">April 9th. 1864.</date>
     <location state='VA'>Rockbridge co. Va</location>
 
     <sal>Dear</sal> <pers role="recip">Sister</pers>
