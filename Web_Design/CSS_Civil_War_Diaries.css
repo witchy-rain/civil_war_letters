@@ -1,9 +1,8 @@
-/*html{
-    background-color:#(200, 80%, 20%)
-    color:
+html{
+    background-color:#BFBFBF;
+    color:hsl(210, 50%, 20%)
 }
 
-*/
 span.head{
     font-family: "Copperplate Gothic";
     font-weight: bold;
@@ -25,23 +24,23 @@ footer {
     display: block;
     text-align:center;
     background-color: #8B0000;
-    font-family: arial, helvetica, sans-serif;
+    font-family: "Copperplate Gothic";
 }
 
 
 /* unvisited link */
 a:link {
-  color: black;
+  color: blue;
 }
 
 /* visited link */
 a:visited {
-  color: blue;
+  color: violet;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: red;
 }
 
 
@@ -49,7 +48,7 @@ a:hover {
     display: flex;
     width: 100%;
     overflow: hidden;
-    background-color: #8B0000;
+    background-color: #1F0F5F;
     z-index: 500;
 }
 .navbar a {
@@ -88,7 +87,7 @@ a:hover {
 }
 .dropdown-content a {
     float: none;
-    color: #70003D;
+    color: hsl(210, 50%, 20%);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
