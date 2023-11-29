@@ -1,0 +1,28 @@
+body{
+    font-family: "Copperplate Gothic", Georgia, serif;
+    font-weight: bold;
+    text-align: center
+}
+
+p{
+    font-family: "Constantia", Georgia, serif;
+    font-weight: normal;
+    font-size: 14px
+}
+
+h1{
+    font-size: 24px
+}
+
+h2{
+    font-size: 18px
+}
+
+th{
+    font-size: 24px;
+    width: 16%
+}
+
+a{
+    color: inherit
+}

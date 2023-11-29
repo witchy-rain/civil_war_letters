@@ -4,12 +4,12 @@ html{
 }
 
 span.head{
-    font-family: "Copperplate Gothic";
+    font-family: "Copperplate Gothic", Georgia, serif;
     font-weight: bold;
 }
 
 span.body{
-    font-family: "Constantia";
+    font-family: "Constantia", Georgia, serif;
 }
 
 
@@ -24,7 +24,7 @@ footer {
     display: block;
     text-align:center;
     background-color: #8B0000;
-    font-family: "Copperplate Gothic";
+    font-family: "Copperplate Gothic", Georgia, serif;
 }
 
 
