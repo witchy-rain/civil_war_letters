@@ -1,7 +1,8 @@
 body{
     font-family: "Copperplate Gothic", Georgia, serif;
     font-weight: bold;
-    text-align: center
+    text-align: center;
+    background-color:#BFBFBF;
 }
 
 p{
