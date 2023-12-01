@@ -10,7 +10,7 @@
         omit-xml-declaration="yes"/>
     
     <xsl:variable name = "interval" select = "125"/> <!-- change to fit number of bars -->
-    <xsl:variable name= "xmultiplier" select ="10"/>
+    <xsl:variable name= "xmultiplier" select =".35"/>
     <xsl:variable name="input" select="collection('../XML/?select=*.xml')"/>
     
     <xsl:template match = "/">
@@ -141,18 +141,18 @@
                                 
                                 <xsl:variable name="happy" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))*$xmultiplier+20"/>
                                 <xsl:variable name="sad" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'sad'])))*$xmultiplier+20"/>
-                                <xsl:variable name="angry" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry'])))+20"/>
-                                <xsl:variable name="bittersweet" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'bittersweet'])))+20"/>
-                                <xsl:variable name="hopeful" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeful'])))+20"/>
-                                <xsl:variable name="afraid" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'afraid'])))+20"/>
+                                <xsl:variable name="angry" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry'])))*$xmultiplier+20"/>
+                                <xsl:variable name="bittersweet" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'bittersweet'])))*$xmultiplier+20"/>
+                                <xsl:variable name="hopeful" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeful'])))*$xmultiplier+20"/>
+                                <xsl:variable name="afraid" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'afraid'])))*$xmultiplier+20"/>
                                 
                                 <!--bars-->
-                                <line x1="20" x2="{$happy}" y1="{$ypos}" y2="{$ypos}" stroke="red" stroke-width="15"/>
+                                <line x1="20" x2="{$happy}" y1="{$ypos}" y2="{$ypos}" stroke="yellow" stroke-width="15"/>
                                 <line x1="20" x2="{$sad}" y1="{$ypos+15}" y2="{$ypos+15}" stroke="blue" stroke-width="15"/>
-                                <line x1="20" x2="{$angry}" y1="{$ypos+30}" y2="{$ypos+30}" stroke="green" stroke-width="15"/>
+                                <line x1="20" x2="{$angry}" y1="{$ypos+30}" y2="{$ypos+30}" stroke="red" stroke-width="15"/>
                                 <line x1="20" x2="{$bittersweet}" y1="{$ypos+45}" y2="{$ypos+45}" stroke="orange" stroke-width="15"/>
-                                <line x1="20" x2="{$hopeful}" y1="{$ypos+60}" y2="{$ypos+60}" stroke="magenta" stroke-width="15"/>
-                                <line x1="20" x2="{$afraid}" y1="{$ypos+75}" y2="{$ypos+75}" stroke="#b33c00" stroke-width="15"/>
+                                <line x1="20" x2="{$hopeful}" y1="{$ypos+60}" y2="{$ypos+60}" stroke="green" stroke-width="15"/>
+                                <line x1="20" x2="{$afraid}" y1="{$ypos+75}" y2="{$ypos+75}" stroke="gray" stroke-width="15"/>
                                 
                                 
                                 
