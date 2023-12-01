@@ -153,7 +153,13 @@
                                 <xsl:variable name="yielding" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'yielding'])))*$xmultiplier+20"/>
                                 
                                 <!--bars-->
-                                <line x1="20" x2="{$happy}" y1="{$ypos}" y2="{$ypos}" stroke="yellow" stroke-width="15"/>
+                                
+                                    <line x1="20" x2="{$happy}" y1="{$ypos}" y2="{$ypos}" stroke="yellow" stroke-width="15"/>
+                                <text x="{$happy + 10}" y="{$ypos+5}">
+                                    Happy: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))"/>
+                                </text>
+                                
+                                
                                 <line x1="20" x2="{$sad}" y1="{$ypos+15}" y2="{$ypos+15}" stroke="blue" stroke-width="15"/>
                                 <line x1="20" x2="{$angry}" y1="{$ypos+30}" y2="{$ypos+30}" stroke="red" stroke-width="15"/>
                                 <line x1="20" x2="{$bittersweet}" y1="{$ypos+45}" y2="{$ypos+45}" stroke="orange" stroke-width="15"/>
@@ -165,9 +171,7 @@
                                 <line x1="20" x2="{$defiant}" y1="{$ypos+135}" y2="{$ypos+135}" stroke="Coral" stroke-width="15"/>
                                 
                                 <!-- labels each bar with its count -->
-                                <text x="{$happy + 10}" y="{$ypos+5}">
-                                    Happy: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))"/>
-                                </text>
+         
                                 
                                 <text x="{$sad + 10}" y="{$ypos + 20}">
                                     Sad: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'sad'])))"/>
