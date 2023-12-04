@@ -159,55 +159,71 @@
                                     Happy: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))"/>
                                 </text>
                                 
-                                
-                                <line x1="20" x2="{$sad}" y1="{$ypos+15}" y2="{$ypos+15}" stroke="blue" stroke-width="15"/>
-                                <line x1="20" x2="{$angry}" y1="{$ypos+30}" y2="{$ypos+30}" stroke="red" stroke-width="15"/>
-                                <line x1="20" x2="{$bittersweet}" y1="{$ypos+45}" y2="{$ypos+45}" stroke="orange" stroke-width="15"/>
-                                <line x1="20" x2="{$hopeful}" y1="{$ypos+60}" y2="{$ypos+60}" stroke="green" stroke-width="15"/>
-                                <line x1="20" x2="{$afraid}" y1="{$ypos+75}" y2="{$ypos+75}" stroke="cyan" stroke-width="15"/>
-                                <line x1="20" x2="{$disgusted}" y1="{$ypos+90}" y2="{$ypos+90}" stroke="violet" stroke-width="15"/>
-                                <line x1="20" x2="{$hopeless}" y1="{$ypos+105}" y2="{$ypos+105}" stroke="navy" stroke-width="15"/>
-                                <line x1="20" x2="{$triumphant}" y1="{$ypos+120}" y2="{$ypos+120}" stroke="Aqua" stroke-width="15"/>
-                                <line x1="20" x2="{$defiant}" y1="{$ypos+135}" y2="{$ypos+135}" stroke="Coral" stroke-width="15"/>
-                                
-                                <!-- labels each bar with its count -->
-         
-                                
+                                    <line x1="20" x2="{$sad}" y1="{$ypos+15}" y2="{$ypos+15}" stroke="blue" stroke-width="15"/>
                                 <text x="{$sad + 10}" y="{$ypos + 20}">
                                     Sad: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'sad'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$angry}" y1="{$ypos+30}" y2="{$ypos+30}" stroke="red" stroke-width="15"/>
                                 <text x="{$angry + 10}" y="{$ypos+ 35}">
                                     Angry: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$bittersweet}" y1="{$ypos+45}" y2="{$ypos+45}" stroke="orange" stroke-width="15"/>
                                 <text x="{$bittersweet + 10}" y="{$ypos + 50}">
                                     Bittersweet: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'bittersweet'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$hopeful}" y1="{$ypos+60}" y2="{$ypos+60}" stroke="green" stroke-width="15"/>
                                 <text x="{$hopeful + 10}" y="{$ypos + 65}">
                                     Hopeful: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeful'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$afraid}" y1="{$ypos+75}" y2="{$ypos+75}" stroke="cyan" stroke-width="15"/>
                                 <text x="{$afraid + 10}" y="{$ypos + 80}">
                                     Afraid: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$disgusted}" y1="{$ypos+90}" y2="{$ypos+90}" stroke="violet" stroke-width="15"/>
                                 <text x="{$disgusted + 10}" y="{$ypos + 95}">
                                     Disgusted: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'disgusted'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$hopeless}" y1="{$ypos+105}" y2="{$ypos+105}" stroke="navy" stroke-width="15"/>
                                 <text x="{$hopeless + 10}" y="{$ypos + 110}">
                                     Hopeless: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeless'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$triumphant}" y1="{$ypos+120}" y2="{$ypos+120}" stroke="Aqua" stroke-width="15"/>
                                 <text x="{$triumphant + 10}" y="{$ypos + 125}">
                                     Triumphant: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'triumphant'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$defiant}" y1="{$ypos+135}" y2="{$ypos+135}" stroke="Coral" stroke-width="15"/>
                                 <text x="{$defiant + 10}" y="{$ypos + 140}">
                                     Defiant: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))"/>
                                 </text>
+                                
+                                <!-- labels each bar with its count -->
+         
+                                
+                               
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                 
                                 <!--y-axis label -->
                                 <text x="15" y="{$ypos+35}" text-anchor="end"><xsl:apply-templates select="//(letter//pers[@role='sender'])[1]"/>-<xsl:apply-templates select = "date"/></text>
