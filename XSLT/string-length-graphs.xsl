@@ -9,7 +9,7 @@
     <xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
         omit-xml-declaration="yes"/>
     
-    <xsl:variable name = "interval" select = "200"/> <!-- change to fit number of bars -->
+    <xsl:variable name = "interval" select = "220"/> <!-- change to fit number of bars -->
     <xsl:variable name= "xmultiplier" select =".35"/>
     <xsl:variable name="input" select="collection('../XML/?select=*.xml')"/>
     
@@ -204,6 +204,18 @@
                                     Defiant: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))"/>
                                 </text>
                                 
+                                    <line x1="20" x2="{$defeated}" y1="{$ypos+150}" y2="{$ypos+150}" stroke="Coral" stroke-width="15"/>
+                                <text x="{$defiant + 10}" y="{$ypos + 155}">
+                                    Defeated: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))"/>
+                                </text>
+                                
+                                    <line x1="20" x2="{$yielding}" y1="{$ypos+165}" y2="{$ypos+165}" stroke="Coral" stroke-width="15"/>
+                                <text x="{$yielding + 10}" y="{$ypos + 170}">
+                                    Yielding: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))"/>
+                                </text>
+                                
+                                
+                                
                                 <!-- labels each bar with its count -->
          
                                 
@@ -226,20 +238,20 @@
                                 
                                 
                                 <!--y-axis label -->
-                                <text x="15" y="{$ypos+35}" text-anchor="end"><xsl:apply-templates select="//(letter//pers[@role='sender'])[1]"/>-<xsl:apply-templates select = "date"/></text>
+                                <text x="15" y="{$ypos+85}" text-anchor="end"><xsl:apply-templates select="//(letter//pers[@role='sender'])[1]"/>-<xsl:apply-templates select = "date"/></text>
                                 
                             </xsl:for-each>
                         </g>
                     </svg>
                     
                     
-                    <footer>
+                    <!--<footer>
                         <br/>
                         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="/state_of_the_union/pics/propercclicense.png" alt="state_of_the_union/pics/cclicense.png"></img></a></p>
                         <p><a href="https://github.com/finn-caskey/state_of_the_union">SOTU Team Github Here</a></p>
                         <br/>
                         <br/>
-                    </footer>
+                    </footer>-->
                 </body>
             </html>
         </xsl:result-document>
