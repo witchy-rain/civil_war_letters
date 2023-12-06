@@ -181,7 +181,7 @@
                                 
                                     <line x1="20" x2="{$afraid}" y1="{$ypos+75}" y2="{$ypos+75}" stroke="cyan" stroke-width="15"/>
                                 <text x="{$afraid + 10}" y="{$ypos + 80}">
-                                    Afraid: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry'])))"/>
+                                    Afraid: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'afraid'])))"/>
                                 </text>
                                 
                                     <line x1="20" x2="{$disgusted}" y1="{$ypos+90}" y2="{$ypos+90}" stroke="violet" stroke-width="15"/>
@@ -206,7 +206,7 @@
                                 
                                     <line x1="20" x2="{$defeated}" y1="{$ypos+150}" y2="{$ypos+150}" stroke="Coral" stroke-width="15"/>
                                 <text x="{$defiant + 10}" y="{$ypos + 155}">
-                                    Defeated: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))"/>
+                                    Defeated: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defeated'])))"/>
                                 </text>
                                 
                                     <line x1="20" x2="{$yielding}" y1="{$ypos+165}" y2="{$ypos+165}" stroke="Coral" stroke-width="15"/>
