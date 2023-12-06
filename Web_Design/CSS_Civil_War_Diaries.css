@@ -104,3 +104,51 @@ a:hover {
     width: 100%;
     background-color: #70003D;
 }
+
+span.happy {
+    color: yellow;
+}
+
+span.sad {
+    color: blue;
+}
+
+span.angry {
+    color: red;
+}
+
+span.bittersweet {
+    color: orange;
+}
+
+span.hopeful {
+    color: green;
+}
+
+span.afraid {
+    color: cyan;
+}
+
+span.disgusted {
+    color: violet;
+}
+
+span.hopeless {
+    color: navy;
+}
+
+span.triumphant {
+    color: aqua;
+}
+
+/*span.defiant {
+    
+}
+
+span.defeated {
+    
+}
+
+span.yielding {
+    
+}*/
