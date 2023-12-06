@@ -69,4 +69,52 @@
         
     </xsl:template>
     
+    <xsl:template match="emotion[@mood='happy']">
+        <span class="happy"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='sad']">
+        <span class="sad"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='bittersweet']">
+        <span class="bittersweet"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='angry']">
+        <span class="angry"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='afraid']">
+        <span class="afraid"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='digusted']">
+        <span class="digusted"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='hopeful']">
+        <span class="hopeful"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='hopeless']">
+        <span class="hopeless"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='triumphant']">
+        <span class="triumphant"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='defiant']">
+        <span class="defiant"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='defeated']">
+        <span class="defeated"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="emotion[@mood='yielding']">
+        <span class="yielding"><xsl:apply-templates/></span>
+    </xsl:template>
+    
 </xsl:stylesheet>
