@@ -15,12 +15,12 @@ I suppose you will read in the papers that there is to be a review of the Army o
 
 I suppose you are pretty well acquainted with all the incidents connected with the Campaign and there is no use of my relating them here.
 
-I intended to have gone to see you before going home if you had stayed at Cumberland, but as you have moved, I will wait and see where you are going to be located, for I hear that the Government is going to retain the Veterans; after being in Service 2 years and 9 months I have only climbed the Ladder of Fame high enough to be an Orderly Sergeant which I have the honor to be now. I suppose to become famous I shall have to do something like Booth the assassion; the last letter I had from home they were all well. Ned received a letter from you (in my care) at Richmond. Slim Eckles is not well yet. Ben Bogia send his respects to you. Ned sends his love to you to which I add my own.</body> 
+I intended to have gone to see you before going home if you had stayed at Cumberland, but as you have moved, I will wait and see where you are going to be located, for I hear that the Government is going to retain the Veterans;<emotion mood = "bittersweet"> after being in Service 2 years and 9 months I have only climbed the Ladder of Fame high enough to be an Orderly Sergeant which I have the honor to be now. I suppose to become famous I shall have to do something like Booth the assassion;</emotion><emotion mood ="hopeful"> the last letter I had from home they were all well.</emotion> Ned received a letter from you (in my care) at Richmond. <emotion mood="sad">Slim Eckles is not well yet.</emotion> Ben Bogia send his respects to you. Ned sends his love to you to which I add my own.</body> 
 
 <close>    
 <val>I will close by signing myself your affectionate brother,</val>
           
-George
+<pers role = "sender" job = "soldier" allegiance = "u">George</pers>
 
 <ps>PS You can direct in about a week  to
 
