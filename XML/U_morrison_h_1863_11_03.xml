@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="test_schema.rnc" type="application/relax-ng-compact-syntax"?>
+<letter>
+<head>
+    <date day="3" month="November" year="1863" standard="18631103"/>
+    <location state='SC'>Morris Island, S.C.</location>
+
+    <unit>4th Regt, Co D</unit>
+
+    <pers role="recip">Cousin Luther,</pers>
+</head>
+<body>
+    I am injoying<sic/> good health and hope this will find you injoying the same. <pers role="ref" job="corp" allegiance="u">John Sanborn</pers> is in the hospital at <place state="SC">Beaufort</place> Hospital No 9. I have a letter from him every week he is a getting along first rate. They have promoted <pers role="ref" job="corporal" allegiance="u">John</pers> to Corporal he dont<sic/> know it yet. I am going to write to <pers role="ref" job="corporal" allegiance="u">John</pers> to night<sic/> I am going to direct it <pers role="ref" job="corporal" allegiance="u">Corp. Sanborn</pers> he wont<sic/> know what it means. They have commenced on <place state="SC">Fort Sumter</place> again. They have been bombarding it for five days and nights. I was on picket at <place state="un">Fort Gregg</place> yesterday. They shot away the flag on <place state="SC">Fort Sumter</place> twice the first time they shot it away a <pers role="ref" allegiance="c">Reb</pers> come up on top of the fort and begun to wave it and put the flag up in the afternoon they shot is<sic/> away again. When the <pers role="ref" allegiance="c">Reb</pers> come<sic/> up to put it up away went our guns at him bang bang bang. I guess that fellow went to his long home. They havnt<sic/> put up the flag yet. They will charge on it before many days. <pers role="ref" job="soldier">Fitzgerald</pers> has got his discharge and gone home perhaps you will hear about him before you get this. I dont<sic/> think of anything more to write this time so I will close.
+</body>
+<close>
+    <val>From your cousin</val>
+
+    <pers role="sender" job="soldier" allegiance="u">H. B. Morrison</pers>
+</close>
+</letter>
