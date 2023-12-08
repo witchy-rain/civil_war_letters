@@ -11,7 +11,7 @@
     <xsl:variable name="input" select="collection('../XML/?select=*.xml')"/>
     <xsl:template match="/">
         
-        <xsl:result-document method="xhtml" indent="yes" href="../Site/union.html">
+        <xsl:result-document method="xhtml" indent="yes" href="../Site/unionletters.html">
             
             <html>
                 <head>
@@ -36,8 +36,8 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Region</button>
                                 <div class="dropdown-content">
-                                    <a href="../Site/union.html">Union</a>
-                                    <a href="../Site/confederate.html">Confederates</a>
+                                    <a href="../Site/unionletters.html">Union</a>
+                                    <a href="../Site/confederateletters.html">Confederates</a>
                                 </div>
                             </div>
                             <div class="dropdown">
