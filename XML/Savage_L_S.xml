@@ -18,6 +18,6 @@ your affectionate Brother, Southy.</emotion>
 </body>
     <close>
     <val>your Affectionate Brother</val>
-<pers role = "sender" job = "soldier" allegiance="c">Southy</pers>
+<pers role = "sender" job = "soldier" allegiance="c">Southy [L. Savage]</pers>
 </close>
 </letter>

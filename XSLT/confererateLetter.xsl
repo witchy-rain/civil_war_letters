@@ -11,11 +11,11 @@
     <xsl:variable name="input" select="collection('../XML/?select=*.xml')"/>
     <xsl:template match="/">
         
-        <xsl:result-document method="xhtml" indent="yes" href="../Site/unionletters.html">
+        <xsl:result-document method="xhtml" indent="yes" href="../Site/confederateletters.html">
             
             <html>
                 <head>
-                    <title>Union</title>
+                    <title>Confederate</title>
                     <link type="text/css" href="../Web_Design/CSS_Civil_War_Diaries.css" rel="stylesheet" />
                 </head>
                 
@@ -49,8 +49,8 @@
                             </div>                
                         </div>
                     </div>  
-                    <h1>Union Letters</h1>
-                    <xsl:for-each select="$input[//pers[@role='sender'][@allegiance='u']]">
+                    <h1>Confederate Letters</h1>
+                    <xsl:for-each select="$input[//pers[@role='sender'][@allegiance='c']]">
                         <xsl:sort select=".//head//@standard"/>
                         <h2><xsl:apply-templates select=".//head/date/@month"/><xsl:text> </xsl:text><xsl:apply-templates select=".//head/date/@day"/>, <xsl:apply-templates select=".//head/date/@year"/></h2>
                         <p><i><xsl:apply-templates select=".//head/location"/></i></p>
