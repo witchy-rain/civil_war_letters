@@ -12,6 +12,7 @@
     <xsl:variable name = "interval" select = "220"/> <!-- change to fit number of bars -->
     <xsl:variable name= "xmultiplier" select =".35"/>
     <xsl:variable name="input" select="collection('../XML/?select=*.xml')"/>
+    <xsl:variable name="lettercount" select="count($input)"/>
     
     <xsl:template match = "/">
         <xsl:result-document method="xhtml" indent="yes" href="../Site/graphs.html">
@@ -88,31 +89,35 @@
                             <text x="1020" y="{(59 * $interval) - 1600}" text-anchor="middle">20000</text>
                             
                             <!-- labels the x-axis (top) -->
-                            <text x="20" y="-10" text-anchor="middle">0</text>
-                            <text x="70" y="-10" text-anchor="middle">1000</text>
-                            <text x="120" y="-10" text-anchor="middle">2000</text>
-                            <text x="170" y="-10" text-anchor="middle">3000</text>
-                            <text x="220" y="-10" text-anchor="middle">4000</text>
-                            <text x="270" y="-10" text-anchor="middle">5000</text>
-                            <text x="320" y="-10" text-anchor="middle">6000</text>
-                            <text x="370" y="-10" text-anchor="middle">7000</text>
-                            <text x="420" y="-10" text-anchor="middle">8000</text>
-                            <text x="470" y="-10" text-anchor="middle">9000</text>
-                            <text x="520" y="-10" text-anchor="middle">10000</text>
-                            <text x="570" y="-10" text-anchor="middle">11000</text>
-                            <text x="620" y="-10" text-anchor="middle">12000</text>
-                            <text x="670" y="-10" text-anchor="middle">13000</text>
-                            <text x="720" y="-10" text-anchor="middle">14000</text>
-                            <text x="770" y="-10" text-anchor="middle">15000</text>
-                            <text x="820" y="-10" text-anchor="middle">16000</text>
-                            <text x="870" y="-10" text-anchor="middle">17000</text>
-                            <text x="920" y="-10" text-anchor="middle">18000</text>
-                            <text x="970" y="-10" text-anchor="middle">19000</text>
-                            <text x="1020" y="-10" text-anchor="middle">20000</text>
+                            <text x="{(1*$xmultiplier)+20}" y="-10" text-anchor="middle">0</text>
+                            <text x="{(250*$xmultiplier)+20}" y="-10" text-anchor="middle">250</text>
+                            <text x="{(500*$xmultiplier)+20}" y="-10" text-anchor="middle">500</text>
+                            <text x="{(750*$xmultiplier)+20}" y="-10" text-anchor="middle">750</text>
+                            <text x="{(1000*$xmultiplier)+20}" y="-10" text-anchor="middle">1000</text>
+                            <text x="{(1250*$xmultiplier)+20}" y="-10" text-anchor="middle">1250</text>
+                            <text x="{(1500*$xmultiplier)+20}" y="-10" text-anchor="middle">1500</text>
+                            <text x="{(1750*$xmultiplier)+20}" y="-10" text-anchor="middle">1750</text>
+                            <text x="{(2000*$xmultiplier)+20}" y="-10" text-anchor="middle">2000</text>
+                            <text x="{(2250*$xmultiplier)+20}" y="-10" text-anchor="middle">2250</text>
+                            <text x="{(2500*$xmultiplier)+20}" y="-10" text-anchor="middle">2500</text>
+                            <text x="{(2750*$xmultiplier)+20}" y="-10" text-anchor="middle">2750</text>
+                           
                             
                             <!-- the line going through the bars  -->
-                            <line x1="70" x2="70" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            <line x1="120" x2="120" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(250*$xmultiplier)+20}" x2="{(250*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(500*$xmultiplier)+20}" x2="{(500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(750*$xmultiplier)+20}" x2="{(750*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(1000*$xmultiplier)+20}" x2="{(1000*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(1250*$xmultiplier)+20}" x2="{(1250*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(1500*$xmultiplier)+20}" x2="{(1500*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(1750*$xmultiplier)+20}" x2="{(1750*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(2000*$xmultiplier)+20}" x2="{(2000*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(2250*$xmultiplier)+20}" x2="{(2250*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(2500*$xmultiplier)+20}" x2="{(2500*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(2750*$xmultiplier)+20}" x2="{(2750*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                           
+                            
+                            <!--<line x1="120" x2="120" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="170" x2="170" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="220" x2="220" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="270" x2="270" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
@@ -130,13 +135,13 @@
                             <line x1="870" x2="870" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="920" x2="920" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="970" x2="970" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            <line x1="1020" x2="1020" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="1020" x2="1020" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
                             
                             
                             <!-- Instead stead of using xsl:apply-templates and creating another xsl:template match, we use xsl:for-each -->
                             <xsl:for-each select="$input">
                                 <!-- Local variables -->
-                                <xsl:variable name="ypos" select="position() * $interval"/>
+                                <xsl:variable name="ypos" select="(position() * $interval)"/>
                                 <xsl:variable name="xpos" select="(count(descendant::emotion[@mood]) *20 )+20"/>
                                 
                                 <xsl:variable name="happy" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))*$xmultiplier+20"/>
