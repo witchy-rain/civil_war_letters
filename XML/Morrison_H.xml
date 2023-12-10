@@ -2,7 +2,7 @@
 <?xml-model href="1_test_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <letter>
 <head>
-    <date day="3" month="November" year="1863" standard="18631103"/>
+    <date day="3" month="November" year="1863" standard="18631103">Nov 3 1863</date>
     <location state="SC">Morris Island, S.C.</location>
 
     <unit>4th Regt, Co D</unit>
