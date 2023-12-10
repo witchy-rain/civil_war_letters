@@ -10,12 +10,13 @@
         omit-xml-declaration="yes"/>
     
     <xsl:variable name = "interval" select = "220"/> <!-- change to fit number of bars -->
-    <xsl:variable name= "xmultiplier" select =".175"/>
+    <xsl:variable name= "xmultiplier" select =".160"/>
     <xsl:variable name="input" select="collection('../XML/?select=*.xml')"/>
     <xsl:variable name="lettercount" select="count($input)+.25"/>
-    
+    <xsl:variable name="xmultiplier2" select = ".160"/>   
+    <xsl:variable name="xmultiplier3" select = ".05"/>
     <xsl:template match = "/">
-        <xsl:result-document method="xhtml" indent="yes" href="../Site/percentsposandneg">
+        <xsl:result-document method="xhtml" indent="yes" href="../Site/percentsposandneg.html">
             <html>
                 <head>
                     <title>Character Count of Emotions by Speech</title>
@@ -53,7 +54,7 @@
                         </div>                
                     </div>
                 </div>  -->
-                    <h1>Emotion Count Per Speech</h1>
+                    <h1>Positive, Negative, and Neutral Emotions Per Speech</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 6000">
                         <g transform="translate(250, 50)">
                             
@@ -107,6 +108,7 @@
                             <text x="{(4500*$xmultiplier)+20}" y="-10" text-anchor="middle">4500</text>
                             <text x="{(5000*$xmultiplier)+20}" y="-10" text-anchor="middle">5000</text>
                             <text x="{(5500*$xmultiplier)+20}" y="-10" text-anchor="middle">5500</text>
+                            <text x="{(6000*$xmultiplier)+20}" y="-10" text-anchor="middle">6000</text>
                             
                             <!-- the line going through the bars  -->
                             <!--<line x1="{(250*$xmultiplier)+20}" x2="{(250*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
@@ -126,7 +128,7 @@
                             <line x1="{(4500*$xmultiplier)+20}" x2="{(4500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="{(5000*$xmultiplier)+20}" x2="{(5000*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="{(5500*$xmultiplier)+20}" x2="{(5500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            
+                            <line x1="{(6000*$xmultiplier)+20}" x2="{(6000*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             
                             <!--<line x1="120" x2="120" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <line x1="170" x2="170" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
@@ -167,11 +169,12 @@
                                 <xsl:variable name="defiant" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))*$xmultiplier+20"/>
                                 <xsl:variable name="defeated" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defeated'])))*$xmultiplier+20"/>
                                 <xsl:variable name="yielding" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'yielding'])))*$xmultiplier+20"/>
-                                <xsl:variable name="positive" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy' and 'hopeful' and 'triumphant' and 'defiant'])))*$xmultiplier+20"/>
-                                
+                                <xsl:variable name="positive" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))*$xmultiplier2 +20 + string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeful']))) *$xmultiplier2 +20 +string-length(normalize-space(string-join(descendant::emotion[@mood = 'triumphant'])))*$xmultiplier2 +20 +string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))*$xmultiplier2 +20 "/>
+                                <xsl:variable name="negative" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'sad'])))*$xmultiplier2 +20 + string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry'])))*$xmultiplier2 +20 + string-length(normalize-space(string-join(descendant::emotion[@mood = 'afraid'])))*$xmultiplier2 +20 + string-length(normalize-space(string-join(descendant::emotion[@mood = 'disgusted'])))*$xmultiplier2 +20 + string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeless'])))*$xmultiplier2 +20 + string-length(normalize-space(string-join(descendant::emotion[@mood = 'defeated'])))*$xmultiplier2 +20 + string-length(normalize-space(string-join(descendant::emotion[@mood = 'yielding'])))*$xmultiplier2 +20 "/>
+                                <xsl:variable name="neutral" select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'bittersweet'])))*$xmultiplier2+20"/>
                                 <!--bars-->
                                 
-                                <line x1="20" x2="{$happy}" y1="{$ypos}" y2="{$ypos}" stroke="yellow" stroke-width="15"/>
+                                <!--<line x1="20" x2="{$happy}" y1="{$ypos}" y2="{$ypos}" stroke="yellow" stroke-width="15"/>
                                 <text x="{$happy + 10}" y="{$ypos+5}">
                                     Happy: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))"/>
                                 </text>
@@ -229,14 +232,22 @@
                                 <line x1="20" x2="{$yielding}" y1="{$ypos+165}" y2="{$ypos+165}" stroke="FloralWhite" stroke-width="15"/>
                                 <text x="{$yielding + 10}" y="{$ypos + 170}">
                                     Yielding: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))"/>
+                                </text>-->
+                                
+                                <line x1="20" x2="{$positive -58.5714}" y1="{$ypos+65}" y2="{$ypos+65}" stroke="FloralWhite" stroke-width="15"/>
+                                <text x="{$positive -48.5714 }" y="{$ypos + 70}">
+                                    Positive: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy'])))+string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeful'])))+string-length(normalize-space(string-join(descendant::emotion[@mood = 'triumphant']))) +string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant']))) "/>
                                 </text>
                                 
-                                <line x1="20" x2="{$positive}" y1="{$ypos+180}" y2="{$ypos+180}" stroke="FloralWhite" stroke-width="15"/>
-                                <text x="{$positive + 10}" y="{$ypos + 185}">
-                                    Positive: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy' and 'hopeful' and 'triumphant' and 'defiant'])))"/>
+                                <line x1="20" x2="{$negative -120}" y1="{$ypos+80}" y2="{$ypos+80}" stroke="red" stroke-width="15"/>
+                                <text x="{$negative -110}" y="{$ypos + 85}">
+                                    Negative: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'sad']))) + string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry']))) + string-length(normalize-space(string-join(descendant::emotion[@mood = 'afraid']))) + string-length(normalize-space(string-join(descendant::emotion[@mood = 'disgusted']))) + string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeless']))) + string-length(normalize-space(string-join(descendant::emotion[@mood = 'defeated']))) + string-length(normalize-space(string-join(descendant::emotion[@mood = 'yielding']))) "/>
                                 </text>
                                 
-                                
+                                    <line x1="20" x2="{$neutral}" y1="{$ypos+95}" y2="{$ypos+95}" stroke="blue" stroke-width="15"/>
+                                    <text x="{$neutral + 10}" y="{$ypos + 100}">
+                                        Neutral: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'bittersweet'])))"/>
+                                    </text>
                                 <!-- labels each bar with its count -->
                                 
                                 
