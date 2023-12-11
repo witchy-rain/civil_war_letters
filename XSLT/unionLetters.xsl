@@ -54,6 +54,7 @@
                         <xsl:sort select=".//head//@standard"/>
                         <h2 id="{.//head//@standard}"><xsl:apply-templates select=".//head/date/@month"/><xsl:text> </xsl:text><xsl:apply-templates select=".//head/date/@day"/>, <xsl:apply-templates select=".//head/date/@year"/></h2>
                         <p><i><xsl:apply-templates select=".//head/location"/></i></p>
+                        <p><xsl:apply-templates select=".//head/sal"/></p>
                         <p><u><xsl:apply-templates select=".//head/pers"/></u></p>
                         <p><xsl:apply-templates select=".//body"/></p>
                         <p><xsl:apply-templates select=".//close"/></p>
