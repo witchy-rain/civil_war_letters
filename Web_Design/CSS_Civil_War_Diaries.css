@@ -118,7 +118,7 @@ span.angry {
 }
 
 span.bittersweet {
-    color: orange;
+    background-color: orange;
 }
 
 span.hopeful {
@@ -138,11 +138,11 @@ span.hopeless {
 }
 
 span.triumphant {
-    color: aqua;
+    background-color: aqua;
 }
 
 span.defiant {
-    color: coral;
+    background-color: coral;
 }
 
 span.defeated {
