@@ -141,14 +141,14 @@ span.triumphant {
     color: aqua;
 }
 
-/*span.defiant {
-    
+span.defiant {
+    color: coral;
 }
 
 span.defeated {
-    
+    color: darkorchid;
 }
 
 span.yielding {
-    
-}*/
+    color: pink;
+}
