@@ -23,7 +23,7 @@
                     <h1>Civil War Diaries</h1>
                     
                     
-                    <div id="navbar">
+                    <div id="navbar" style="position: sticky; top:0">
                         <div class="navbar">
                             <a href="../index.html">Home</a>
                             <div class="dropdown">
@@ -62,6 +62,7 @@
                     </xsl:for-each>
                     <div width="300px" height="300px" style="position: fixed; bottom: 350px; right: 50px"><iframe src="simpleTL.html" title="iFrame Page Nav" height="300px" width="300px"></iframe></div>
                     <img src="../Web_Design/Union_Letter_Image.png" alt="Union envelope with Eagle" width="300" height="300" style="position:fixed; right: 50px; bottom: 50px"/>
+                    <table class="footer" width=" 100%" style="position: fixed; left: 0; bottom: 0; background-color: #1F0F5F"><tr><th style="background-color: #BFBFBF">Key:</th> <td><span class="happy">Happy</span></td> <td><span class="sad">Sad</span></td> <td><span class="angry">Angry</span></td> <td><span class="bittersweet">Bittersweet</span></td> <td><span class="hopeful">Hopeful</span></td> <td><span class="afraid">Afraid</span></td> <td><span class="disgusted">Disgusted</span></td> <td><span class="hopeless" style="background-color: #BFBFBF">Hopeless</span></td> <td><span class="triumphant">Triumphant</span></td> <td><span class="defiant">Defiant</span></td> <td><span class="defeated">Defeated</span></td> <td><span class="yielding">Yielding</span></td></tr></table>
                 </body>
             </html>
             
