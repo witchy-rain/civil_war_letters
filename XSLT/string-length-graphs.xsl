@@ -225,9 +225,9 @@
                                     Defeated: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defeated'])))"/>
                                 </text>
                                 
-                                    <line x1="20" x2="{$yielding}" y1="{$ypos+165}" y2="{$ypos+165}" stroke="FloralWhite" stroke-width="15"/>
+                                    <line x1="20" x2="{$yielding}" y1="{$ypos+165}" y2="{$ypos+165}" stroke="Pink" stroke-width="15"/>
                                 <text x="{$yielding + 10}" y="{$ypos + 170}">
-                                    Yielding: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant'])))"/>
+                                    Yielding: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'yielding'])))"/>
                                 </text>
                                 
                                 

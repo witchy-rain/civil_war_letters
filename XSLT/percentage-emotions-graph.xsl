@@ -228,7 +228,7 @@
                                 
                                 <line x1="20" x2="{$yielding}" y1="{$ypos+165}" y2="{$ypos+165}" stroke="FloralWhite" stroke-width="15"/>
                                 <text x="{$yielding + 10}" y="{$ypos + 170}">
-                                    Yielding: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Yielding: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'yeilding']))) div string-length(normalize-space(string-join(descendant::body)))"/>
                                 </text>
                                 
                                 
