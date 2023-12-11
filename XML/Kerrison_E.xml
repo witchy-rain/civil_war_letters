@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="1_test_schema.rnc" type="application/relax-ng-compact-syntax"?>
+
+<letter>
+<head>
+<location state = "MD">Near Hagerstown</location>
+
+<date day = "7" month = "July" year = "1863" standard = "18630707">July 7th, 1863</date>
+
+<sal>Dear <pers role = "recip">Sister</pers> -</sal>
+</head>
+<body>
+I now write with great haste to let you know where we are. <emotion mood = "defeated">On the evening of the 2nd we fought a desperate battle at Gettysburg in Pa. in which we suffered terribly being compelled to stand the fire of artillery 3 ½ hour being within the hundred &amp; fifty yards of said battery.</emotion><emotion mood = "sad"> Our Reg. acted gloriously but has lost many a brave man – <pers role = "ref">Charly</pers> I am sorry to say was wounded not by any means dangerously.</emotion> He was shot in the thigh with a piece of shell &amp; in the face by a buckshot. <emotion mood = "hopeful">He was in fine spirits when I last saw him &amp; doing finely.</emotion> <emotion mood = "defeated">Among the killed in our company are the <pers role = "ref">Sergt. LaBruce Mortimer</pers>, <pers role = "ref">Jos. S. Gadsdin</pers>, <pers role = "ref">Sep Miles</pers>, <pers role = "ref">E. J. Mills</pers> &amp; <pers role = "ref">Lewis Daniels</pers>. The wounded are <pers role = "ref">Charly K</pers> – <pers role = "ref">Ed. Gaillard</pers>, <pers role = "ref">Preston F. Wescott</pers>, <pers role = "ref">Jos. Harley</pers>, <pers role = "ref">C. J. Colcock</pers>, <pers role = "ref">Wm Lawton</pers>, <pers role = "ref">C. P. Bellinger</pers>, <pers role = "ref">Leuit S. Bissell</pers> &amp; <pers role = "ref">L. Osander</pers> a substitute.</emotion> <emotion mood = "sad"><pers role = "ref">Gaillard</pers> was shot in the arm the ball resting on the bone. <pers role = "ref">Wescott</pers> shot through the muscles of one of his legs near the thigh not dangerous. <pers role = "ref">Harley</pers> very much the same. <pers role = "ref">Colcock</pers> is from <place state = "SC">Charleston</place> shot in the left hand which was amputated at the wrist. <pers role ="ref">Lawton</pers> one arm amputated <pers role = "ref">Belliger</pers> shot in the thigh. <pers role = "ref">Lieut Bissell</pers> shot in the calf of the leg part of the bone broken. <pers role = "ref">Osander</pers> shot in the face &amp; one leg badly shattered <pers role = "ref">Seg’t Moultree Braiesford</pers> was slightly wounded in the leg &amp; left to take care of the wounded (from our company).</emotion> <emotion mood = "defeated">Since we left (the 5th) our wounded have been all captured by the Yankees – Charly among the number.</emotion> <emotion mood = "hopeful">They will receive more attention &amp; be more comfortable than if they were with us. Charly was doing first rate &amp; may possibly get home for a short time after being exchanged.</emotion> <emotion mood = "sad">Do if you can let the families of the men I have mentioned in my letter of their fates.</emotion> We advanced on a battery in an open field under a most terrific fire of grape shell &amp; canister. We have only 8 or 9 men for duty in the company now. Our Regt has but two Captains left – <pers role = "ref">Dr. Elliot</pers> &amp; <pers role = "ref">Capt Graham</pers>.<emotion mood = "sad"> <pers role = "ref">Col. Kennedy</pers> was shot in the arm &amp; <pers role = "ref">Capt Wallace</pers> was shot in the arm also.</emotion> Wallace was acting major at the time. Our Regt carried in some three hundred &amp; odd &amp; had 169 killed &amp; wounded. I have not time to write particulars of the fight now as I am in haste.
+</body>
+<close>
+<val>With best love to all I am as ever your aff brother</val>
+
+<pers role ="sender" job = "soldier" allegiance = "c">Edwin [Kerrison]</pers>
+
+<ps>We expect to fight another battle soon at Sharpsburg.</ps>
+</close>
+</letter>
