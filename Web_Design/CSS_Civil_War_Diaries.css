@@ -126,7 +126,7 @@ span.hopeful {
 }
 
 span.afraid {
-    color: cyan;
+    background-color: cyan;
 }
 
 span.disgusted {
@@ -138,7 +138,7 @@ span.hopeless {
 }
 
 span.triumphant {
-    background-color: aqua;
+    color: brown;
 }
 
 span.defiant {
