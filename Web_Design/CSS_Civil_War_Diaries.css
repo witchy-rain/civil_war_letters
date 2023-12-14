@@ -1,15 +1,15 @@
 html{
+   
+    font-family: "Copperplate Gothic", Georgia, serif;
+    font-weight: bold;
     background-color:#BFBFBF;
     color:hsl(210, 50%, 20%)
 }
 
-span.head{
-    font-family: "Copperplate Gothic", Georgia, serif;
-    font-weight: bold;
-}
-
-span.body{
+p{
     font-family: "Constantia", Georgia, serif;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 
