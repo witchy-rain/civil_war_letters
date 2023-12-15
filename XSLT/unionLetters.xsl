@@ -23,27 +23,30 @@
                     <h1>Civil War Diaries</h1>
                     
                     
-                    <div id="navbar" style="position: sticky; top:0">
+                    <div id="navbar"  style="position: sticky; top:0">
                         <div class="navbar">
                             <a href="../index.html">Home</a>
                             <div class="dropdown">
                                 <button class="dropbtn">About</button>
                                 <div class="dropdown-content">
-                                    <a href="../Site/About_the_Project.html">About the Project</a>
-                                    <a href="../Site/team.html">Team</a>
+                                    <a href="About_the_Project.html">About the Project</a>
+                                    <a href="team.html">Team</a>
+                                    <a href="advancedTL.html">Timeline</a>
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <button class="dropbtn">Region</button>
                                 <div class="dropdown-content">
-                                    <a href="../Site/unionletters.html">Union</a>
-                                    <a href="../Site/confederateletters.html">Confederates</a>
+                                    <a href="unionletters.html">Union</a>
+                                    <a href="confederateletters.html">Confederates</a>
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <button class="dropbtn">Analysis</button>
                                 <div class="dropdown-content">
-                                    <a href="../Site/graphs.html">Graphs</a>
+                                    <a href="graphs.html">Emotion Graph</a>
+                                    <a href="percentage-graphs.html">Emotion Percentage Graph</a>
+                                    <a href="percentsposandneg.html">Positive/Negative Emotion Graph</a>
                                     
                                 </div>
                             </div>                
@@ -52,18 +55,20 @@
                     <h1>Union Letters</h1>
                     <xsl:for-each select="$input[//pers[@role='sender'][@allegiance='u']]">
                         <xsl:sort select=".//head//@standard"/>
-                        <h2 id="{.//head//@standard}"><xsl:apply-templates select=".//head/date/@month"/><xsl:text> </xsl:text><xsl:apply-templates select=".//head/date/@day"/>, <xsl:apply-templates select=".//head/date/@year"/></h2>
+                        <hr id="{.//head//@standard}"/>
+                        <br/>
+                        <h2><xsl:apply-templates select=".//head/date/@month"/><xsl:text> </xsl:text><xsl:apply-templates select=".//head/date/@day"/>, <xsl:apply-templates select=".//head/date/@year"/></h2>
                         <p><i><xsl:apply-templates select=".//head/location"/></i></p>
                         <p><xsl:apply-templates select=".//head/sal"/></p>
                         <p><u><xsl:apply-templates select=".//head/pers"/></u></p>
                         <p><xsl:apply-templates select=".//body"/></p>
                         <p><xsl:apply-templates select=".//close"/></p>
                         <p>(length:  <xsl:apply-templates select="string-length(.//body)"/>)</p>
-                        <hr/>
+                        <br/>
                     </xsl:for-each>
-                    <div width="300px" height="300px" style="position: fixed; bottom: 350px; right: 50px"><iframe src="simpleTL.html" title="iFrame Page Nav" height="300px" width="300px"></iframe></div>
-                    <img src="../Web_Design/Union_Letter_Image.png" alt="Union envelope with Eagle" width="300" height="300" style="position:fixed; right: 50px; bottom: 50px"/>
-                    <table class="footer" width=" 100%" style="position: fixed; left: 0; bottom: 0; background-color: #1F0F5F"><tr><th style="background-color: #BFBFBF">Key:</th> <td><span class="happy">Happy</span></td> <td><span class="sad">Sad</span></td> <td><span class="angry">Angry</span></td> <td><span class="bittersweet">Bittersweet</span></td> <td><span class="hopeful">Hopeful</span></td> <td><span class="afraid">Afraid</span></td> <td><span class="disgusted">Disgusted</span></td> <td><span class="hopeless" style="background-color: #BFBFBF">Hopeless</span></td> <td><span class="triumphant">Triumphant</span></td> <td><span class="defiant">Defiant</span></td> <td><span class="defeated">Defeated</span></td> <td><span class="yielding">Yielding</span></td></tr></table>
+                    <div width="300px" height="450px" style="position: fixed; bottom: 250px; right: 50px"><iframe src="simpleTL.html" title="iFrame Page Nav" height="400px" width="300px"></iframe></div>
+                    <img src="../Web_Design/Union_Letter_Image.png" alt="Union envelope with Eagle" width="300" style="position:fixed; right: 50px; bottom: 50px"/>
+                    <table class="footer" width=" 100%" style="position: fixed; left: 0; bottom: 0; background-color: #BFBFBF; text-align: center; font-size: 24px" bordercolor="#1F0F5F" border="5px"><tr><th>Key:</th> <td><span class="happy">Happy</span></td> <td><span class="sad">Sad</span></td> <td><span class="angry">Angry</span></td> <td><span class="bittersweet">Bittersweet</span></td> <td><span class="hopeful">Hopeful</span></td> <td><span class="afraid">Afraid</span></td> <td><span class="disgusted">Disgusted</span></td> <td><span class="hopeless">Hopeless</span></td> <td><span class="triumphant">Triumphant</span></td> <td><span class="defiant">Defiant</span></td> <td><span class="defeated">Defeated</span></td> <td><span class="yielding">Yielding</span></td></tr></table>
                 </body>
             </html>
             
