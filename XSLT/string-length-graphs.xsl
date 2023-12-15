@@ -23,7 +23,7 @@
                 </head>
                 
                 <body>
-                    <h1>Civil War Diaries</h1>
+                    <h1>Civil War Letters</h1>
                     <!--navbar-->
                     <!--<div id="navbar">
                     <div class="navbar">
@@ -53,7 +53,38 @@
                         </div>                
                     </div>
                 </div>  -->
+                    
+                    <div id="navbar"  style="position: sticky; top:0">
+                        <div class="navbar">
+                            <a href="../index.html">Home</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">About</button>
+                                <div class="dropdown-content">
+                                    <a href="About_the_Project.html">About the Project</a>
+                                    <a href="team.html">Team</a>
+                                    <a href="advancedTL.html">Timeline</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Region</button>
+                                <div class="dropdown-content">
+                                    <a href="unionletters.html">Union</a>
+                                    <a href="confederateletters.html">Confederates</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Analysis</button>
+                                <div class="dropdown-content">
+                                    <a href="graphs.html">Emotion Graph</a>
+                                    <a href="percentage-graphs.html">Emotion Percentage Graph</a>
+                                    <a href="percentsposandneg.html">Positive/Negative Emotion Graph</a>
+                                    
+                                </div>
+                            </div>                
+                        </div>
+                    </div>
                     <h1>Emotion Count Per Speech</h1>
+                    <text>This Graph shows the amount of characters in the text per emotion.</text>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 6000">
                         <g transform="translate(250, 50)">
                             

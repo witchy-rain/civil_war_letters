@@ -24,37 +24,43 @@
                 </head>
                 
                 <body>
-                    <h1>Civil War Diaries</h1>
-                    <!--navbar-->
-                    <!--<div id="navbar">
-                    <div class="navbar">
-                        <a href="/state_of_the_union/index.html">Home</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">About</button>
-                            <div class="dropdown-content">
-                                <a href="/state_of_the_union/html/about.html">About the Project</a>
-                                <a href="/state_of_the_union/html/team.html">Team</a>
+                    <h1>Civil War Letters</h1>
+                    
+                    <div id="navbar"  style="position: sticky; top:0">
+                        <div class="navbar">
+                            <a href="../index.html">Home</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">About</button>
+                                <div class="dropdown-content">
+                                    <a href="About_the_Project.html">About the Project</a>
+                                    <a href="team.html">Team</a>
+                                    <a href="advancedTL.html">Timeline</a>
+                                </div>
                             </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Region</button>
+                                <div class="dropdown-content">
+                                    <a href="unionletters.html">Union</a>
+                                    <a href="confederateletters.html">Confederates</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Analysis</button>
+                                <div class="dropdown-content">
+                                    <a href="graphs.html">Emotion Graph</a>
+                                    <a href="percentage-graphs.html">Emotion Percentage Graph</a>
+                                    <a href="percentsposandneg.html">Positive/Negative Emotion Graph</a>
+                                    
+                                </div>
+                            </div>                
                         </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">Original Texts</button>
-                            <div class="dropdown-content">
-                                <a href="/state_of_the_union/html/scope_toc.html">Project Scope (John F. Kennedy to George W. Bush)</a>
-                                <a href="/state_of_the_union/html/non_scope_toc.html">All Addresses (George Washington to George W. Bush</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">Analysis</button>
-                            <div class="dropdown-content">
-                                <a href="/state_of_the_union/html/graphs.html">Topic Reference Graphs By Mention</a>
-                                <a href="/state_of_the_union/html/percentgraphs.html">Topic Reference Graphs By Percentage</a>
-                                <a href="/state_of_the_union/html/speechlengthgraph.html">Average Address Length By President</a>
-                                <a href="/state_of_the_union/html/discussion.html">Discussion</a>                      
-                            </div>
-                        </div>                
                     </div>
-                </div>  -->
+                    
                     <h1>Positive, Negative, and Neutral Emotions Per Speech</h1>
+                    <text>This Graph shows the amount of characters of text in each letter that are either positive, negative, or neutral.</text>
+                    <text>Positive emotions: Happy, Hopeful, Triumphant, Defiant. </text>
+                    <text>Negative emotions: Sad, Angry, Afraid, Disgusted, Hopeless, Defeated, Yielding. </text>
+                    <text>Neutral emotions: Bittersweet.</text>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 6000">
                         <g transform="translate(250, 50)">
                             
