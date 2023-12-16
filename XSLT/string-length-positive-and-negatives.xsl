@@ -116,6 +116,26 @@
                             <text x="{(5500*$xmultiplier)+20}" y="-10" text-anchor="middle">5500</text>
                             <text x="{(6000*$xmultiplier)+20}" y="-10" text-anchor="middle">6000</text>
                             
+                            <text x="{(1*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">0</text>
+                            <!--<text x="{(250*$xmultiplier)+20}" y="{($lettercount * $interval)+20 }" text-anchor="middle">250</text>-->
+                            <text x="{(500*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">500</text>
+                            <!--<text x="{(750*$xmultiplier)+20}" y="-10" text-anchor="middle">750</text>-->
+                            <text x="{(1000*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">1000</text>
+                            <!--<text x="{(1250*$xmultiplier)+20}" y="-10" text-anchor="middle">1250</text>-->
+                            <text x="{(1500*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">1500</text>
+                            <!--<text x="{(1750*$xmultiplier)+20}" y="-10" text-anchor="middle">1750</text>-->
+                            <text x="{(2000*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">2000</text>
+                            <!--<text x="{(2250*$xmultiplier)+20}" y="-10" text-anchor="middle">2250</text>-->
+                            <text x="{(2500*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">2500</text>
+                            <!--<text x="{(2750*$xmultiplier)+20}" y="-10" text-anchor="middle">2750</text>-->
+                            <text x="{(3000*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">3000</text>
+                            <text x="{(3500*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">3500</text>
+                            <text x="{(4000*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">4000</text>
+                            <text x="{(4500*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">4500</text>
+                            <text x="{(5000*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">5000</text>
+                            <text x="{(5500*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">5500</text>
+                            <text x="{(6000*$xmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">6000</text>
+                            
                             <!-- the line going through the bars  -->
                             <!--<line x1="{(250*$xmultiplier)+20}" x2="{(250*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
                             <line x1="{(500*$xmultiplier)+20}" x2="{(500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
