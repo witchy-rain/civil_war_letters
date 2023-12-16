@@ -122,43 +122,62 @@
                             <text x="1020" y="{(59 * $interval) - 1600}" text-anchor="middle">20000</text>
                             
                             <!-- labels the x-axis (top) -->
-                            <text x="{(1*$xmultiplier)+20}" y="-10" text-anchor="middle">0</text>
-                            <!--<text x="{(250*$xmultiplier)+20}" y="-10" text-anchor="middle">250</text>-->
-                            <text x="{(500*$xmultiplier)+20}" y="-10" text-anchor="middle">500</text>
-                            <!--<text x="{(750*$xmultiplier)+20}" y="-10" text-anchor="middle">750</text>-->
-                            <text x="{(1000*$xmultiplier)+20}" y="-10" text-anchor="middle">1000</text>
-                            <!--<text x="{(1250*$xmultiplier)+20}" y="-10" text-anchor="middle">1250</text>-->
-                            <text x="{(1500*$xmultiplier)+20}" y="-10" text-anchor="middle">1500</text>
-                            <!--<text x="{(1750*$xmultiplier)+20}" y="-10" text-anchor="middle">1750</text>-->
-                            <text x="{(2000*$xmultiplier)+20}" y="-10" text-anchor="middle">2000</text>
-                            <!--<text x="{(2250*$xmultiplier)+20}" y="-10" text-anchor="middle">2250</text>-->
-                            <text x="{(2500*$xmultiplier)+20}" y="-10" text-anchor="middle">2500</text>
-                            <!--<text x="{(2750*$xmultiplier)+20}" y="-10" text-anchor="middle">2750</text>-->
-                            <text x="{(3000*$xmultiplier)+20}" y="-10" text-anchor="middle">3000</text>
-                            <text x="{(3500*$xmultiplier)+20}" y="-10" text-anchor="middle">3500</text>
-                            <text x="{(4000*$xmultiplier)+20}" y="-10" text-anchor="middle">4000</text>
-                            <text x="{(4500*$xmultiplier)+20}" y="-10" text-anchor="middle">4500</text>
-                            <text x="{(5000*$xmultiplier)+20}" y="-10" text-anchor="middle">5000</text>
-                            <text x="{(5500*$xmultiplier)+20}" y="-10" text-anchor="middle">5500</text>
+                            <text x="{(0*$percentmultiplier)+20}" y="-10" text-anchor="middle">0</text>
+                            
+                            <text x="{(.1*$percentmultiplier)+20}" y="-10" text-anchor="middle">10%</text>
+                            
+                            <text x="{(.2*$percentmultiplier)+20}" y="-10" text-anchor="middle">20%</text>
+                            
+                            <text x="{(.3*$percentmultiplier)+20}" y="-10" text-anchor="middle">30%</text>
+                            
+                            <text x="{(.4*$percentmultiplier)+20}" y="-10" text-anchor="middle">40%</text>
+                            
+                            <text x="{(.5*$percentmultiplier)+20}" y="-10" text-anchor="middle">50%</text>
+                            
+                            <text x="{(.6*$percentmultiplier)+20}" y="-10" text-anchor="middle">60%</text>
+                            <text x="{(.7*$percentmultiplier)+20}" y="-10" text-anchor="middle">70%</text>
+                            <text x="{(.8*$percentmultiplier)+20}" y="-10" text-anchor="middle">80%</text>
+                            <text x="{(.9*$percentmultiplier)+20}" y="-10" text-anchor="middle">90%</text>
+                            <text x="{(1*$percentmultiplier)+20}" y="-10" text-anchor="middle">100%</text>
+                            
+                            
+                            <text x="{(0*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">0</text>
+                            
+                            <text x="{(.1*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">10%</text>
+                            
+                            <text x="{(.2*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">20%</text>
+                            
+                            <text x="{(.3*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">30%</text>
+                            
+                            <text x="{(.4*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">40%</text>
+                            
+                            <text x="{(.5*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">50%</text>
+                            
+                            <text x="{(.6*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">60%</text>
+                            <text x="{(.7*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">70%</text>
+                            <text x="{(.8*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">80%</text>
+                            <text x="{(.9*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">90%</text>
+                            <text x="{(1*$percentmultiplier)+20}" y="{($lettercount * $interval)+20}" text-anchor="middle">100%</text>
+                            
                             
                             <!-- the line going through the bars  -->
                             <!--<line x1="{(250*$xmultiplier)+20}" x2="{(250*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
-                            <line x1="{(500*$xmultiplier)+20}" x2="{(500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.1*$percentmultiplier)+20}" x2="{(.1*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <!--<line x1="{(750*$xmultiplier)+20}" x2="{(750*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval) }" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
-                            <line x1="{(1000*$xmultiplier)+20}" x2="{(1000*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.2*$percentmultiplier)+20}" x2="{(.2*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <!--<line x1="{(1250*$xmultiplier)+20}" x2="{(1250*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
-                            <line x1="{(1500*$xmultiplier)+20}" x2="{(1500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.3*$percentmultiplier)+20}" x2="{(.3*$percentmultiplier) +20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <!--<line x1="{(1750*$xmultiplier)+20}" x2="{(1750*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
-                            <line x1="{(2000*$xmultiplier)+20}" x2="{(2000*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.4*$percentmultiplier)+20}" x2="{(.4*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <!--<line x1="{(2250*$xmultiplier)+20}" x2="{(2250*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
-                            <line x1="{(2500*$xmultiplier)+20}" x2="{(2500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.5*$percentmultiplier)+20}" x2="{(.5*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
                             <!--<line x1="{(2750*$xmultiplier)+20}" x2="{(2750*$xmultiplier)+20}" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>-->
-                            <line x1="{(3000*$xmultiplier)+20}" x2="{(3000*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            <line x1="{(3500*$xmultiplier)+20}" x2="{(3500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            <line x1="{(4000*$xmultiplier)+20}" x2="{(4000*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            <line x1="{(4500*$xmultiplier)+20}" x2="{(4500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            <line x1="{(5000*$xmultiplier)+20}" x2="{(5000*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
-                            <line x1="{(5500*$xmultiplier)+20}" x2="{(5500*$xmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.6*$percentmultiplier)+20}" x2="{(.6*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.7*$percentmultiplier)+20}" x2="{(.7*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.8*$percentmultiplier)+20}" x2="{(.8*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(.9*$percentmultiplier)+20}" x2="{(.9*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            <line x1="{(1*$percentmultiplier)+20}" x2="{(1*$percentmultiplier)+20}" y1="0" y2="{($lettercount * $interval)}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
+                            
                             
                             
                             <!--<line x1="120" x2="120" y1="0" y2="{(59 * $interval) -1620}" stroke="black" stroke-width=".25" stroke-dasharray="8"/>
@@ -205,62 +224,62 @@
                                 
                                 <line x1="20" x2="{$happy}" y1="{$ypos}" y2="{$ypos}" stroke="yellow" stroke-width="15"/>
                                 <text x="{$happy + 10}" y="{$ypos+5}">
-                                    Happy: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy']))) div string-length(normalize-space(string-join(descendant::body)))"/> %
+                                    Happy: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'happy']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$sad}" y1="{$ypos+15}" y2="{$ypos+15}" stroke="blue" stroke-width="15"/>
                                 <text x="{$sad + 10}" y="{$ypos + 20}">
-                                    Sad: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'sad']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Sad: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'sad']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$angry}" y1="{$ypos+30}" y2="{$ypos+30}" stroke="red" stroke-width="15"/>
                                 <text x="{$angry + 10}" y="{$ypos+ 35}">
-                                    Angry: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Angry: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'angry']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$bittersweet}" y1="{$ypos+45}" y2="{$ypos+45}" stroke="orange" stroke-width="15"/>
                                 <text x="{$bittersweet + 10}" y="{$ypos + 50}">
-                                    Bittersweet: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'bittersweet']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Bittersweet: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'bittersweet']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$hopeful}" y1="{$ypos+60}" y2="{$ypos+60}" stroke="green" stroke-width="15"/>
                                 <text x="{$hopeful + 10}" y="{$ypos + 65}">
-                                    Hopeful: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeful']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Hopeful: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeful']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$afraid}" y1="{$ypos+75}" y2="{$ypos+75}" stroke="cyan" stroke-width="15"/>
                                 <text x="{$afraid + 10}" y="{$ypos + 80}">
-                                    Afraid: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'afraid']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Afraid: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'afraid']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$disgusted}" y1="{$ypos+90}" y2="{$ypos+90}" stroke="violet" stroke-width="15"/>
                                 <text x="{$disgusted + 10}" y="{$ypos + 95}">
-                                    Disgusted: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'disgusted']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Disgusted: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'disgusted']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$hopeless}" y1="{$ypos+105}" y2="{$ypos+105}" stroke="navy" stroke-width="15"/>
                                 <text x="{$hopeless + 10}" y="{$ypos + 110}">
-                                    Hopeless: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeless']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Hopeless: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'hopeless']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$triumphant}" y1="{$ypos+120}" y2="{$ypos+120}" stroke="Aqua" stroke-width="15"/>
                                 <text x="{$triumphant + 10}" y="{$ypos + 125}">
-                                    Triumphant: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'triumphant']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Triumphant: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'triumphant']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$defiant}" y1="{$ypos+135}" y2="{$ypos+135}" stroke="Coral" stroke-width="15"/>
                                 <text x="{$defiant + 10}" y="{$ypos + 140}">
-                                    Defiant: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Defiant: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'defiant']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$defeated}" y1="{$ypos+150}" y2="{$ypos+150}" stroke="DarkOrchid" stroke-width="15"/>
                                 <text x="{$defeated + 10}" y="{$ypos + 155}">
-                                    Defeated: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'defeated']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Defeated: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'defeated']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 <line x1="20" x2="{$yielding}" y1="{$ypos+165}" y2="{$ypos+165}" stroke="FloralWhite" stroke-width="15"/>
                                 <text x="{$yielding + 10}" y="{$ypos + 170}">
-                                    Yielding: <xsl:value-of select="string-length(normalize-space(string-join(descendant::emotion[@mood = 'yeilding']))) div string-length(normalize-space(string-join(descendant::body)))"/>
+                                    Yielding: <xsl:value-of select="round-half-to-even(string-length(normalize-space(string-join(descendant::emotion[@mood = 'yeilding']))) div string-length(normalize-space(string-join(descendant::body)))*100)"/> %
                                 </text>
                                 
                                 
