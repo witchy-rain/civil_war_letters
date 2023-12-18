@@ -13,6 +13,10 @@ First, the markup consists of 21 letters. For a team that wound up having six st
 
 Second, in the current presentation, it is not possible to see the change over time within each "region" (Union and Confederate sides). There is a Timeline feature that in theory correlates major events of the war with the letters. What would have been interesting would be seeing the positive/negative emotions of Union soldiers matched up chronologically with those of their Confederate counterparts, correlated with Union and Confederate victories/losses in the war, to see whether the changing tides of the war were reflected in the changing emotional tone of the letters.
 
-To be fair, the three graph pages were entirely the work of one student on the team, the only one who learned how to write XSLT to generate SVG graphs, while another student workes solo on the timeline. A visualization such as this would have taken more hands on it, more co-ordination, more time, and more cross-training (i.e. less divide-and-conquer). On the positive side, this leaves a functional core of a project to which a future team could contribute by adding letters, features, and further visualizations.
+To be fair, the three graph pages were entirely the work of one student on the team, the only one who learned how to write XSLT to generate SVG graphs, while another student workes solo on the timeline. A visualization such as this would have taken more hands on it, more co-ordination, more time, and more cross-training (i.e. less divide-and-conquer). 
+
+Third, the About page is merely "under construction" and does not indicate what the project's ideas or goals were. Other important pieces are missing too, such as a link to the project's GitHub repo. Users would have to stumble across it through the personal page links on the Team page.
+
+On the positive side, this leaves a functional core of a project to which a future team could contribute by adding letters, features, and further visualizations.
 
 -Dr. Campbell, 12/18/2023
