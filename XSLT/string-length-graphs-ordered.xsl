@@ -159,7 +159,7 @@
                                 
                                 <xsl:variable name="moods">
                                     <xsl:for-each-group select="descendant::emotion" group-by="@mood">
-                                        <mood>
+                                        <mood moodname="{./@mood}">
                                             <xsl:copy-of select="current-group()"/>
                                         </mood>
                                     </xsl:for-each-group>
@@ -169,7 +169,7 @@
                                     <xsl:sort select="string-length(normalize-space(string-join(string())))"/>
                                     <xsl:variable name="mood-pos" select="count(preceding-sibling::mood)"/>
                                     <xsl:variable name="length" select="string-length(normalize-space(string-join(string())))"/>
-                                    <xsl:variable name="mood-name" select="@mood"/>
+                                    <xsl:variable name="mood-name" select="@moodname"/>
                                     
                                     <line x1="20" x2="{$length*$xmultiplier+20}" y1="{$mood-pos * 15}" y2="{$mood-pos * 15}" stroke="blue" stroke-width="15"/>
                                     <text x="{$length*$xmultiplier + 10}" y="{$mood-pos * 15 +5}">
